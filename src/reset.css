@@ -17,5 +17,12 @@ code {
     monospace;
 }
 
+@media(max-width: 574px) {
+  body {
+    
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+}
 
 

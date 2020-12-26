@@ -13,7 +13,7 @@ import Exp from '../../components/Exp';
 
 function Work() {
   return (
-    <div className="App">
+    <div className="work">
 
       <Default />
         <div className="style-bars" id="top-bar_w"/>

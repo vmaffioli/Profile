@@ -1,4 +1,3 @@
-
 .exp-div{
     position: absolute;
 
@@ -24,7 +23,7 @@
 }
 
 .work-button {
-    padding: 10px 60px 10px 60px;
+    padding: 10px 50px 10px 50px;
     width: 33%;
     background-color: lightgray;
     border: none;
@@ -53,6 +52,46 @@
     font-style: bold;
     font-size: 35px;
     margin: -10px 0 -0px 0;
+}
+
+
+@media(max-width: 574px) {
+    .exp-div{
+        position: absolute;
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 15vh;
+        left: 0;
+    
+        justify-content: center;
+    
+    
+    }
+    .exp-div p{
+        padding: 0 40px 0 20px;
+    }
+    
+    .content-div {
+        margin: 60px 0 0 -10px;
+        
+        font-size: 20px;
+        
+    
+    }
+
+    .work-button {
+        padding: 10px 0px 10px 30px;
+        width: 33vw;
+        float: left;
+        font-size: 13px;
+  
+    }
+
+    
+
+
 }
 
 

@@ -7,7 +7,7 @@
   width: 40vw;
 
   top: 10vh;
-  right: -3vw;
+  right: 0;
 
 
   
@@ -22,7 +22,7 @@ h2 {
 .skills {
   position:relative;
   float:left;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 .skills ul {
   padding-top: 25px;
@@ -139,3 +139,27 @@ h2 {
   }
 }
 
+@media(max-width: 574px) {
+  .skills-div{
+    position: absolute;
+  
+    height: 60vh;
+    width: 100vw;
+  
+    top: 85vh;
+    padding-left: 1vw;
+    left: 0;
+  
+  
+    
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-left: -20px;
+
+    font-weight: 700;
+  }
+
+}
