@@ -1,0 +1,21 @@
+
+.title-div{
+    position: absolute;;
+    background-color: aquamarine;
+
+    height: 60vh;
+    width: 40vw;
+
+    top: 20vh;
+    left: 5vw;
+
+    justify-content: center;
+
+}
+
+.photo {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+}
