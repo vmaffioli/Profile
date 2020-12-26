@@ -5,9 +5,9 @@ import './style.css';
 
 function Exp(props) {
   const [workHistory, setWorkHistory] = useState({
-    workName: 'Expêriencias', 
+    workName: 'Experiências', 
     workInfo: '', 
-    workDesc: 'Possuo dois anos de expêriencia com programação em geral, tive a oportunidade de estagiar para cliente bancário utilizando JAVA, COBOL e mySQL, os quais me serviram de alicerce para desenvolver autonomia de aprendizado. Após ter tido contato mais profundo com Javascritpt, escolhi começar a estudar Node.js e React.Js e bancos de dados noSQL como mongDB e Firebase.'
+    workDesc: 'Possuo dois anos de experiência com programação em geral, tive a oportunidade de estagiar para cliente bancário utilizando JAVA, COBOL e mySQL, os quais me serviram de alicerce para desenvolver autonomia de aprendizado. Após ter tido contato mais profundo com Javascritpt, escolhi começar a estudar Node.js e React.Js e bancos de dados noSQL como mongDB e Firebase.'
   });
 
 

@@ -1,7 +1,6 @@
 import './style.css';
 import linkedinIco from "../../assets/img/linkedin.png";
 import githubIco from "../../assets/img/github.png";
-import gmailIco from "../../assets/img/gmail.png";
 
 
 

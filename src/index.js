@@ -6,11 +6,15 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './reset.css';
 import App from './pages/Home/App';
 import Work from './pages/Work';
+import Header from './components/Header';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
+
+    <Header />
+
     <BrowserRouter>
 
       <Switch>
