@@ -1,0 +1,80 @@
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+
+
+.prev {
+    position: absolute;
+    display: block;
+    margin: 0 0 0 0;
+    width: 50px;
+    height: 50px;
+
+
+    left: 23%;
+    top : 20px;
+
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+  }
+  .prev:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    color: red;
+    border: solid #000 3px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(135deg) skewX(10deg) skewY(10deg);
+  }
+  
+
+  .prev:before {
+    border-top: none;
+    border-left: none;
+    left: 42%;
+  }
+  
+
+   .prev {
+    cursor: pointer;
+    /*transition: all $btTransiTime linear;*/
+  }
+
+  .prev:hover {
+    border-width: 4px;
+    border-color: red;
+  }
+  .prev:hover:before {
+    border-width: 4px;
+    border-color: red;
+  }
+  
+   
+  .prev:active:before {
+    left: 48%;
+  }
+  
+  .btclick {
+    border-width: 5px;
+    border-color: red;
+  }

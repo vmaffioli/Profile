@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
 import './reset.css';
 import App from './pages/Home/App';
+import Work from './pages/Work';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+
+      <Switch>
+          
+          <Route path="/" component={App} exact />
+          <Route path="/work" component={Work}  />    
+
+      </Switch>
+      
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

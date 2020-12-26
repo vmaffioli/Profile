@@ -1,12 +1,11 @@
 
 .title-div{
     position: absolute;;
-    background-color: aquamarine;
 
     height: 60vh;
     width: 40vw;
 
-    top: 20vh;
+    top: 19vh;
     left: 5vw;
 
     justify-content: center;
@@ -17,5 +16,26 @@
     border-radius: 50%;
     width: 300px;
     height: 300px;
+
+}
+
+
+#h-name {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    position: relative;
+    top: -1vh;
+
+}
+
+#p-intro {
+    font-style: italic;
+    font-size: 20px;
+
+    position: relative;
+    top: -5vh;
+
+    
 
 }

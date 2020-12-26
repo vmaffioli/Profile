@@ -1,0 +1,48 @@
+
+.about-div{
+    position: absolute;;
+
+    height: 60vh;
+    width: 40vw;
+
+    top: 20vh;
+    right: 5vw;
+
+    justify-content: center;
+
+    
+
+}
+
+.shortcuts {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+
+    margin: 10px;
+}
+
+.shortcuts:hover {
+    box-shadow: 0px 5px 2px red;}
+
+#p-desc {
+    margin: 50px;
+
+    font-size: 25px;
+}
+
+#icon-linkedin {
+    height: 50px;
+    width: 50px;
+}
+
+#icon-github {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+

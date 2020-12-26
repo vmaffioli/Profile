@@ -1,0 +1,60 @@
+
+.exp-div{
+    position: absolute;
+
+    height: 60vh;
+    width: 40vw;
+
+    top: 20vh;
+    left: 5vw;
+
+    justify-content: center;
+
+
+}
+
+.exp-div p{
+    margin: 10px;
+}
+
+.content-div {
+    margin-top: 50px;
+    font-size: 20px;
+
+}
+
+.work-button {
+    padding: 10px 60px 10px 60px;
+    width: 33%;
+    background-color: lightgray;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+.work-button:hover {
+    letter-spacing: 0.8em;
+    background-color: red;
+}
+
+
+.work-button:focus {
+    letter-spacing: 0.8em;
+    background-color: red;
+}
+
+#work-info{
+    font-style: italic;
+    font-size: 15px;
+}
+
+#work-name{
+    font-style: bold;
+    font-size: 35px;
+    margin: -10px 0 -0px 0;
+}
+
+
+
+
