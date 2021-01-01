@@ -41,7 +41,7 @@
 }
 
 
-@media(max-width: 574px) {
+@media(max-width: 450px) {
 
     .title-div{
         position: absolute;

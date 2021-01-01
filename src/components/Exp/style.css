@@ -55,12 +55,12 @@
 }
 
 
-@media(max-width: 574px) {
+@media(max-width: 450px) {
     .exp-div{
         position: absolute;
     
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
     
         top: 15vh;
         left: 0;
@@ -82,14 +82,12 @@
     }
 
     .work-button {
-        padding: 10px 0px 10px 30px;
-        width: 33vw;
+        padding: 10px 0px 10px 10px;
+        width: 33%;
         float: left;
         font-size: 13px;
   
     }
-
-    
 
 
 }
