@@ -29,9 +29,7 @@ code {
   }
 
   body {
-    
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
   }
   
 }
