@@ -9,6 +9,7 @@
     left: 5vw;
 
     justify-content: center;
+    display: inline-block;
 
 }
 
@@ -16,6 +17,7 @@
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    
 
 }
 
@@ -25,7 +27,7 @@
     padding: 0;
     font-size: 50px;
     position: relative;
-    top: -1vh;
+    top: 1vh;
 
 }
 
@@ -34,7 +36,7 @@
     font-size: 20px;
 
     position: relative;
-    top: -5vh;
+    top: 0;
 
     
 

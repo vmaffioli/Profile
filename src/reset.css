@@ -30,8 +30,8 @@ code {
 
   body {
     
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   
 }
