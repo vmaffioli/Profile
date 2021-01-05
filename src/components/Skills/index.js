@@ -11,7 +11,7 @@ function Skills(props) {
     <div className="skills-div ">
 
       <div className="skills">
-        <h2>Minhas Skills / Autonomia</h2>
+        <h2 id="h2-skills">Minhas Skills / Autonomia</h2>
         <ul>
           <li><span className="html5"></span><em>HTML</em></li>
           <li><span className="css3"></span><em>CSS</em></li>

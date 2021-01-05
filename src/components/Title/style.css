@@ -24,8 +24,8 @@
 
 #h-name {
     margin: 0;
-    padding: 0;
-    font-size: 50px;
+    padding-top: 1vh;
+    font-size: 7vh;
     position: relative;
     top: 1vh;
 
@@ -33,7 +33,7 @@
 
 #p-intro {
     font-style: italic;
-    font-size: 20px;
+    font-size: 3vh;
 
     position: relative;
     top: 0;
@@ -52,17 +52,29 @@
         width: 100vw;
     
         top: 15vh;
-        left: -4vw;
+        left: 0;
     
         justify-content: center;
     
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+        
+    
+    }
+
+    #h-name{
+        font-size: 5vh;
+
     }
 
 
     #p-intro {
         position: relative;
         top: 0;
-        padding: 1vh 0 1vh 0;
+        padding: 1vh 0 0 0;
     
     }
 

@@ -15,11 +15,11 @@
 }
 
 .shortcuts {
-
+    position: relative;
+    top: 15vh;
     height: 52px;
     width: 52px;
     border-radius: 50%;
-
     margin: 10px;
 }
 
@@ -28,10 +28,10 @@
     box-shadow: 0px 5px 2px red;}
 
 #p-desc {
-
-    margin: 50px;
-
-    font-size: 25px;
+    position: relative;
+    margin: 10vh 3vh 2vh 3vh;
+    padding: 0;
+    font-size: 3vh;
 }
 
 #icon-linkedin {
@@ -55,11 +55,6 @@
 
 
 
-
-
-
-
-
 @media(max-width: 450px) {
 
     .about-div{
@@ -68,16 +63,15 @@
         height: 30vh;
         width: 100vw;
 
-        top: 85vh;
-        left: -5vw;
+        top: 75vh;
+        left: 0;
 
         justify-content: center;
 
-        padding: 1vh 0 1vh 0;
-
-        
 
     }
+
+
 
     .shortcuts {
 
@@ -86,8 +80,7 @@
         height: 52px;
         width: 52px;
         border-radius: 50%;
-
-        top: 50vh;
+        top: 40vh;
     }
 
     .shortcuts:hover {
@@ -98,38 +91,27 @@
  
 
     #p-desc {
-        position: absolute;
-
-        margin: 50px;
-
+        margin: 0vh 3vh 2vh 3vh;
         font-size: 3vh;
     }
 
     #icon-linkedin {
         position: absolute;
-        height: 50px;
-        width: 50px;
+
     }
 
     #icon-github {
         position: absolute;
-        left: 25vw;
-        height: 50px;
-        width: 50px;
+        left: 23vw;
+
     }
 
     #icon-download {
         position: absolute;
         left: -10vw;
-        height: 50px;
-        width: 50px;
+
     }
 
-    #bottom-bar_h {
-        top: 148vh;
-        right: 0;
-      
-      }
 
       
 
