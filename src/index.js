@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {HashRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import './reset.css';
 import App from './pages/Home/App';
@@ -11,7 +11,7 @@ import Work from './pages/Work';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
 
       <Switch>
           
@@ -20,7 +20,7 @@ ReactDOM.render(
 
       </Switch>
       
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
   
