@@ -5,7 +5,6 @@ import './App.css';
 import photo from '../../assets/img/myphoto.png';
 import data from "../../data.json";
 
-import Default from '../Default';
 import Title from '../../components/Title';
 import About from '../../components/About';
 import NextPage from '../../components/NextPage';
@@ -15,7 +14,6 @@ import NextPage from '../../components/NextPage';
 function App() {
   return (
     <div className="App">
-      <Default />
       <div className="style-bars" id="top-bar_h"/>
       <div className="style-bars" id="bottom-bar_h"/>
 
@@ -47,8 +45,8 @@ function App() {
           return data.github;
         })}
 
-        email={data.map((data) => {
-          return data.email;
+        download={data.map((data) => {
+          return data.download;
         })}
 
       />

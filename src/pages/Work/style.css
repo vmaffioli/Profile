@@ -1,7 +1,59 @@
-
-
-  
 .work {
+    position:absolute;
     text-align: center;
     width: 100vw;
+}
+
+
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(50vw);
+              transform: translateX(50vw);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(50vw);
+              transform: translateX(50vw);    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  
+
+#top-bar_h {
+    position: absolute;
+  
+    top: 0;
+    left: 0;
+  
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+ 
+#bottom-bar_h {
+    position: absolute;
+    top: 90vh;
+    right: 0;
+  
+  
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  
+  } 
+
+@media(max-width: 450px) {
+
+    #bottom-bar_h {
+        top: 148vh;
+        right: 0;
+    
+    }
 }

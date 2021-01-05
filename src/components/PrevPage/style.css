@@ -41,7 +41,7 @@
     position: absolute;
     width: 35%;
     height: 35%;
-    color: red;
+    color: var(--red);
     border: solid #000 3px;
     top: 50%;
     transform: translate(-50%, -50%) rotate(135deg) skewX(10deg) skewY(10deg);
@@ -62,11 +62,11 @@
 
   .prev:hover {
     border-width: 4px;
-    border-color: red;
+    border-color: var(--red);
   }
   .prev:hover:before {
     border-width: 4px;
-    border-color: red;
+    border-color: var(--red);
   }
   
    
@@ -76,5 +76,5 @@
   
   .btclick {
     border-width: 5px;
-    border-color: red;
+    border-color: var(--red);
   }
