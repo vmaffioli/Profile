@@ -9,6 +9,7 @@ import Work from './pages/Work';
 
 
 
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
           
           <Route path="/" component={App} exact />
           <Route path="/work" component={Work}  />    
+
 
       </Switch>
       
