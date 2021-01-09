@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 import './reset.css';
 import App from './pages/Home/App';
@@ -11,8 +12,17 @@ import Work from './pages/Work';
 
 
 ReactDOM.render(
+  
   <React.StrictMode>
+    
+    <Helmet>
+        <title>Vinícius Maffioli</title>
+        <meta name="viniciusmaffioli-profile" content="React.js app" />
+        <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+    </Helmet>
+
     <BrowserRouter>
+
 
       <Switch>
           

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+
 import './App.css';
 
 import photo from '../../assets/img/myphoto.png';
@@ -14,6 +15,7 @@ import NextPage from '../../components/NextPage';
 function App() {
   return (
     <div className="App">
+
       <div className="style-bars" id="top-bar_h"/>
       <div className="style-bars" id="bottom-bar_h"/>
 
