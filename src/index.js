@@ -8,6 +8,8 @@ import './reset.css';
 import App from './pages/Home/App';
 import Work from './pages/Work';
 
+import Thumb from './assets/img/thumb.png';
+
 
 
 
@@ -16,9 +18,15 @@ ReactDOM.render(
   <React.StrictMode>
     
     <Helmet>
+      
         <title>Vinícius Maffioli</title>
-        <meta name="viniciusmaffioli-profile" content="React.js app" />
         <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+
+        <meta property="og:title" content="viniciusmaffioli-profile" />
+        <meta property="og:description" content="teste" />
+        <meta property="og:image" content={Thumb} />
+        <meta property="og:url" content="teste" />
+
     </Helmet>
 
     <BrowserRouter>
