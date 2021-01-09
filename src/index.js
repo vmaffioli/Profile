@@ -24,7 +24,7 @@ ReactDOM.render(
 
         <meta property="og:title" content="viniciusmaffioli-profile" />
         <meta property="og:description" content="teste" />
-        <meta property="og:image" content={Thumb} />
+        <meta property="og:image" content="thumb.png" />
         <meta property="og:url" content="teste" />
 
     </Helmet>
