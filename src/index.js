@@ -22,10 +22,6 @@ ReactDOM.render(
         <title>Vinícius Maffioli</title>
         <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
 
-        <meta property="og:title" content="viniciusmaffioli-profile" />
-        <meta property="og:description" content="teste" />
-        <meta property="og:image" content="thumb.png" />
-        <meta property="og:url" content="teste" />
 
     </Helmet>
 
