@@ -10,4 +10,4 @@ Used in this project:
   - heroku (deploy)
 
 To checkout the result, visits:
-https://viniciusmaffioli-profile.herokuapp.com/
+https://viniciusmaffioli.herokuapp.com/
