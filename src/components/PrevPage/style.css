@@ -78,3 +78,13 @@
     border-width: 5px;
     border-color: var(--red);
   }
+
+
+  @media(max-width: 450px) {
+    .prev{
+      margin: 10px 0 0 0;
+
+    }
+
+
+  }
