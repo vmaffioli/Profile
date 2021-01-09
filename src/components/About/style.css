@@ -75,13 +75,8 @@
 
 
     .shortcuts {
+        top: 8vh;
 
-        position: absolute;
-
-        height: 52px;
-        width: 52px;
-        border-radius: 50%;
-        top: 40vh;
     }
 
     .shortcuts:hover {
@@ -96,19 +91,14 @@
         font-size: 3vh;
     }
 
-    #icon-linkedin {
-        position: absolute;
-
-    }
+  
 
     #icon-github {
-        position: absolute;
         left: 23vw;
 
     }
 
     #icon-download {
-        position: absolute;
         left: -10vw;
 
     }

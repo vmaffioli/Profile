@@ -24,13 +24,12 @@
 .prev {
     position: absolute;
     display: block;
-    margin: 0 0 0 0;
+    margin: 20px 0 0 0;
     width: 50px;
     height: 50px;
 
 
     left: 23%;
-    top : 20px;
 
     -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
     animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
@@ -81,7 +80,7 @@
 
 
   @media(max-width: 450px) {
-    .prev{
+    .prev {
       margin: 10px 0 0 0;
 
     }
