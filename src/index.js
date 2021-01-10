@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import {Helmet} from 'react-helmet';
+import MetaTags from 'react-meta-tags';
 
 import './reset.css';
 import App from './pages/Home/App';
@@ -17,13 +17,15 @@ ReactDOM.render(
   
   <React.StrictMode>
     
-    <Helmet>
+    <MetaTags>
       
         <title>Vinícius Maffioli</title>
+        <meta name="description" content="My Web Profile made with React.js" />
         <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
-
-
-    </Helmet>
+        <meta name="author" content="Vinícius Maffioli" />
+        <meta property="og:image" content={Thumb} />
+        
+    </MetaTags>
 
     <BrowserRouter>
 
