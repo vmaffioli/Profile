@@ -25,6 +25,25 @@ code {
     monospace;
 }
 
+.chat-container{
+  height: 501px;
+}
+
+.react-chatbot-kit-chat-header {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #000;
+  font-family: Arial;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #fff;
+  padding: 12.5px;
+  font-weight: bold;
+}
+
+
+
 @media(max-width: 450px) {
 
   html {

@@ -66,7 +66,6 @@ const questions = {
         return send(request,qContent,qKey)
     },
     aboutMe: (request) => {
-        let result;
         let qContent = [
             "me conte sobre você",
             "gostaria de saber sobre você",

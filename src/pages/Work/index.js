@@ -29,6 +29,7 @@ function Work() {
             config={config}
             actionProvider={ActionProvider}
             messageParser={MessageParser}
+            headerText= "VINIBOT - Informações extras"
         />
       </div>
 
