@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 import PrevPage from '../../components/PrevPage';
-import Skills from '../../components/Skills';
+import Chatbot from 'react-chatbot-kit';
 import Exp from '../../components/Exp';
 
+import ActionProvider from "../../components/Chatbot/ActionProvider";
+import MessageParser from "../../components/Chatbot/MessageParser";
+import config from "../../components/Chatbot/config";
 
 
 
@@ -21,7 +24,13 @@ function Work() {
         <PrevPage />
       </Link>
 
-      <Skills />
+      <div className="chat-container">
+        <Chatbot 
+            config={config}
+            actionProvider={ActionProvider}
+            messageParser={MessageParser}
+        />
+      </div>
 
       
 
