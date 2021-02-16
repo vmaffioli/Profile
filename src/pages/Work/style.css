@@ -120,9 +120,10 @@
     .chat-container {
       position: absolute;
       bottom: -72vh;
-      left: 9vw;
+      left: 12vw;
 
-      align-items: center;
+      justify-content: center;
+      
     }
 
     .btn-chat {
