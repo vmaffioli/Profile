@@ -53,46 +53,45 @@ const questions = {
     },
     all: (request) => { //perguntas
         let qContent = [
-            "quais perguntas você sabe responder ?",
-            "quais perguntas você conhece ?",
-            "quais perguntas você consegue responder ?",
-            "quais perguntas você pode responder ?",
-
+            "quais perguntas voce sabe responder ?",
+            "quais perguntas voce conhece ?",
+            "quais perguntas voce consegue responder ?",
+          
         ]
         let qKey = [
-            "você",
+            "voce",
             "perguntas"
         ]
         return send(request,qContent,qKey)
     },
     aboutMe: (request) => {
         let qContent = [
-            "me conte sobre você",
-            "gostaria de saber sobre você",
-            "me fale um pouco sobre você",
-            "me fale sobre você",
-            "me conta um pouco sobre de vocêe",
-            "fale sobre você",
-            "conte sobre você",
-            "quero saber sobre você",
-            "gostaria de saber sobre você",
+            "me conte sobre voce",
+            "gostaria de saber sobre voce",
+            "me fale um pouco sobre voce",
+            "me fale sobre voce",
+            "me conta um pouco sobre de vocee",
+            "fale sobre voce",
+            "conte sobre voce",
+            "quero saber sobre voce",
+            "gostaria de saber sobre voce",
 
         ]
         let qKey = [
             "sobre",
-            "você"
+            "voce"
         ]
         return send(request,qContent,qKey)
     },
     pontoForte: (request) => {
         let qContent = [
             "qual seu ponto forte ?",
-            "qual é o seu ponto forte ?",
-            "qual vocêê considera seu ponto forte ?",
-            "para vocêê, qual é o seu ponto forte ?",
+            "qual e o seu ponto forte ?",
+            "qual voce considera seu ponto forte ?",
+            "para voce, qual e o seu ponto forte ?",
             "gostaria de saber seu ponto forte",
-            "qual caracteristica vocêê considera seu ponto forte ?",
-            "me diz qual é o seu ponto forte ?",
+            "qual caracteristica voceê considera seu ponto forte ?",
+            "me diz qual e o seu ponto forte ?",
             "e o seu ponto forte ?",
             "agora seu ponto forte"
         ]
@@ -105,12 +104,12 @@ const questions = {
     pontoFraco: (request) => {
         let qContent = [
             "qual seu ponto fraco ?",
-            "qual é o seu ponto fraco ?",
-            "qual vocêê considera seu ponto fraco ?",
-            "para vocêê, qual é o seu ponto fraco ?",
+            "qual e o seu ponto fraco ?",
+            "qual voce considera seu ponto fraco ?",
+            "para voce, qual e o seu ponto fraco ?",
             "gostaria de saber seu ponto fraco ?",
-            "qual caracteristica vocêê considera seu ponto fraco ?",
-            "me diz qual é o seu ponto fraco ?",
+            "qual caracteristica voceê considera seu ponto fraco ?",
+            "me diz qual e o seu ponto fraco ?",
             "e o seu ponto fraco ?",
             "agora o seu ponto fraco ?"
         ]
@@ -122,30 +121,28 @@ const questions = {
     },
     pretensaoSalarial: (request) => {
         let qContent = [
-            "qual a sua pretensão salarial ?",
-            "gostaria de saber sua pretensão salarial ?",
-            "me informe sua pretensão salarial",
-            "qual a sua pretensão salarial ? receber pagamento",
-            "qual a sua pretensão de salario ?",
-
+            "qual a sua pretensao salarial ?",
+            "gostaria de saber sua pretensao salarial ?",
+            "me informe sua pretensao salarial",
+            "qual a sua pretensao salarial ? receber pagamento",
             
         ]
         let qKey = [
-            "pretensão",
-            "salari"
+            "pretensao",
+            "salarial"
         ]
         return send(request,qContent,qKey)
     },
     cincoAnos: (request) => {
         let qContent = [
-            "onde vocêê se vê daqui cinco anos ? 5",
-            "como vocêê se vê daqui a cinco anos ? 5",
-            "como vocêê quer se ver daqui a cinco anos? 5",
-            "onde vocêê quer estar daqui cinco anos? 5",
-            "como vocêê quer ser daqui cinco anos ? 5",
-            "onde vocêê quer estar daqui a cinco anos ?",
-            "como vocêê quer estar daqui a cinco anos ?",
-            "daqui 5 anos vocêê se vê como ?"
+            "onde voce se vê daqui cinco anos ? 5",
+            "como voce se vê daqui a cinco anos ? 5",
+            "como voce quer se ver daqui a cinco anos? 5",
+            "onde voce quer estar daqui cinco anos? 5",
+            "como voce quer ser daqui cinco anos ? 5",
+            "onde voce quer estar daqui a cinco anos ?",
+            "como voce quer estar daqui a cinco anos ?",
+            "daqui 5 anos voce se vê como ?"
 
         ]
         let qKey = [
@@ -156,12 +153,12 @@ const questions = {
     },
     habilidadesTecnicas: (request) => { 
         let qContent = [
-            "quais são suas habilidades técnicas ?",
-            "me fale sobre suas habilidades técnicas ?",
-            "gostaria de saber sobre suas habilidades técnicas ?",
-            "quais suas habilidades técnicas ?",
-            "agora me fale sobre suas habilidades técnicas ?",
-            "e suas habilidades técnicas ?",
+            "quais sao suas habilidades tecnicas ?",
+            "me fale sobre suas habilidades tecnicas ?",
+            "gostaria de saber sobre suas habilidades tecnicas ?",
+            "quais suas habilidades tecnicas ?",
+            "agora me fale sobre suas habilidades tecnicas ?",
+            "e suas habilidades tecnicas ?",
 
 
 
@@ -169,14 +166,14 @@ const questions = {
         ]
         let qKey = [
             "habilidades",
-            "técnicas"
+            "tecnicas"
         ]
         return send(request,qContent,qKey)
     },
     habilidadesSociais: (request) => { 
         let qContent = [
             "me fale sobre suas habilidades sociais ?",
-            "quais são suas habilidades sociais ?",
+            "quais sao suas habilidades sociais ?",
             "gostaria de saber sobre suas habilidades sociais ?",
             "quais suas habilidades sociais ?",
             "agora me fale sobre suas habilidades sociais ?",
@@ -192,7 +189,7 @@ const questions = {
     skills: (request) => { 
         let qContent = [
             "me fale sobre suas habilidades sociais ?",
-            "quais são suas habilidades sociais ?",
+            "quais sao suas habilidades sociais ?",
             "gostaria de saber sobre suas habilidades sociais ?",
             "agora me fale sobre suas habilidades sociais ?",
 

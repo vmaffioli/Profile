@@ -23,29 +23,29 @@ class MessageParser {
       this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
     } else if (config.step === "form_init") {
 
-      if (questions.compare(questions.aboutMe('content'), questions.aboutMe('key'), message)) {
-        this.actionProvider.q01(message);
+      if (questions.compare(questions.aboutMe('content'), questions.aboutMe('key'), message.normalize("NFD"))) {
+        this.actionProvider.q01(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.pontoForte('content'), questions.pontoForte('key'), message)) {
-        this.actionProvider.q02(message);
+      } else if (questions.compare(questions.pontoForte('content'), questions.pontoForte('key'), message.normalize("NFD"))) {
+        this.actionProvider.q02(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.pontoFraco('content'), questions.pontoFraco('key'), message)) {
-        this.actionProvider.q03(message);
+      } else if (questions.compare(questions.pontoFraco('content'), questions.pontoFraco('key'), message.normalize("NFD"))) {
+        this.actionProvider.q03(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.pretensaoSalarial('content'), questions.pretensaoSalarial('key'), message)) {
-        this.actionProvider.q04(message);
+      } else if (questions.compare(questions.pretensaoSalarial('content'), questions.pretensaoSalarial('key'), message.normalize("NFD"))) {
+        this.actionProvider.q04(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.cincoAnos('content'), questions.cincoAnos('key'), message)) {
-        this.actionProvider.q05(message);
+      } else if (questions.compare(questions.cincoAnos('content'), questions.cincoAnos('key'), message.normalize("NFD"))) {
+        this.actionProvider.q05(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.habilidadesTecnicas('content'), questions.habilidadesTecnicas('key'), message)) {
-        this.actionProvider.q06(message);
+      } else if (questions.compare(questions.habilidadesTecnicas('content'), questions.habilidadesTecnicas('key'), message.normalize("NFD"))) {
+        this.actionProvider.q06(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.habilidadesSociais('content'), questions.habilidadesSociais('key'), message)) {
-        this.actionProvider.q07(message);
+      } else if (questions.compare(questions.habilidadesSociais('content'), questions.habilidadesSociais('key'), message.normalize("NFD"))) {
+        this.actionProvider.q07(message.normalize("NFD"));
 
-      } else if (questions.compare(questions.all('content'), questions.all('key'), message)) {
-        this.actionProvider.all(message);
+      } else if (questions.compare(questions.all('content'), questions.all('key'), message.normalize("NFD"))) {
+        this.actionProvider.all(message.normalize("NFD"));
 
       } else {
         this.actionProvider.dont_know();
