@@ -102,7 +102,7 @@ const messages = {
     },
     dont_know: () => {
         let msg = [
-            "Eu não conheço essa pergunta, me desculpa! Eu ainda não reconheço erros gramaticais (como acentos por exemplo), por favor revise a pergunta ou digite 'quais perguntas você sabe responder'."
+            "Eu não conheço essa pergunta, me desculpa! Para saber o que eu consigo responder, basta me perguntar."
         ]
         return randomize(msg);
     },
@@ -118,7 +118,7 @@ const messages = {
         ]
         return randomize(msg);
     },
-    q01_3: (param) => {
+    q01_3: () => {
         let msg = [
             "Amo programar, sou autodidata e possuo um plano de estudos diário, onde atualmente me dedico a javascript (Node,react e bancos noSQL como Firebase) ."
         ]

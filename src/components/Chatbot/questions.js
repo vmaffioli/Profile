@@ -52,22 +52,17 @@ const questions = {
 
 
         key.forEach(e => {
-
-            
             if (Array.isArray(e)) { 
                 e.forEach(element => {
-
                     if (qIn.includes(element)) {
                         innerBool = true
                     }
                 });
-
                 if (innerBool) {
                     bool = true
                 } else {
                     bool = false
                 }
-
             } else {
                 if (qIn.includes(e)) {
                     bool = true
@@ -75,23 +70,18 @@ const questions = {
                     bool = false
                 }
             }
-
         })
         if (bool) {
             question.forEach(eachQ => { //desmontando a pergunta memorizada
                 eachQ = eachQ.split(" ")
                 let eqct = 0;
-
-
                 eachQ.forEach(e => {
-
                     if (qIn.includes(e)) {
                         eqct++
                     }
                 })
                 let iQIn = qIn.split(" ")
                 let calc = 70 / 100 * iQIn.length
-
                 if (eqct >= calc) {
                     result = true
                 }
@@ -101,7 +91,7 @@ const questions = {
     },
     default: (request) => { //exemplo
         let qContent = [] 
-        let qKey = [] //voce pode usar listas dentro de listas
+        let qKey = [] // permite usar 
         return send(request, qContent, qKey)
     },
     all: (request) => { //perguntas
@@ -121,7 +111,6 @@ const questions = {
         let qKey = [
             [
                 "voce",
-                "vc",
                 "consegue"
             ],
             [
@@ -274,15 +263,18 @@ const questions = {
             "que estaçao voce possui acesso",
             "qual estaçao mais proxima da sua casa",
             "qual estaçao mais proxima da sua residencia",
-            "qual estaçao mais proxima da voce",
+            "qual estaçao mais proxima de voce",
             "voce esta perto de qual estaçao",
             "qual estaçao mais proxima da sua casa",
+            "voce esta proximo de qual estaçao"
 
         ]
         let qKey = [
             [
                 "acesso",
-                "proxima"
+                "proxima",
+                "perto",
+                "proximo"
             ],
             "estaçao"
         ]
