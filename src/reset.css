@@ -25,22 +25,37 @@ code {
     monospace;
 }
 
-.chat-container{
-  height: 501px;
+@media(min-width: 452px) {
+  .chat-container {
+    position: absolute;
+    right: 15vw;
+    bottom: 9vh;
+    z-index: 1;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3%;
+    width: 275px;
+    height: 500px;
+  }
+  
+
+
+ 
+
+  .react-chatbot-kit-chat-input-container {
+    width: 275px;
+  }
+
+
+  .react-chatbot-kit-chat-header {
+    width: 250px;
+
+  }
+
+
+
 }
 
-.react-chatbot-kit-chat-header {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  background-color: #000;
-  font-family: Arial;
-  display: flex;
-  align-items: center;
-  font-size: 0.85rem;
-  color: #fff;
-  padding: 12.5px;
-  font-weight: bold;
-}
 
 
 
@@ -57,6 +72,11 @@ code {
     overflow-y: auto;
   }
   
+  .chat-container{
+    height: 501px;
+    width: 275px;
+
+  }
 }
 
 
