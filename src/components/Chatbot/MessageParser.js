@@ -15,9 +15,7 @@ class MessageParser {
 
 
   parse(message) {
-    const msg = message.toLowerCase();
-
-
+    const msg = message.replace("?", "").toLowerCase();
 
     if (config.step === "presentation_init") {
       this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
@@ -46,6 +44,9 @@ class MessageParser {
 
       } else if (questions.compare(questions.all('content'), questions.all('key'), message.normalize("NFD"))) {
         this.actionProvider.all(message.normalize("NFD"));
+
+      } else if (questions.compare(questions.acessoEstacao('content'), questions.acessoEstacao('key'), message.normalize("NFD"))) {
+        this.actionProvider.q08(message.normalize("NFD"));
 
       } else {
         this.actionProvider.dont_know();

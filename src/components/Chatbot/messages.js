@@ -30,15 +30,15 @@ const messages = {
         let msg = [
             "Olá! Me chamo Vinibot e estou aqui para responder as perguntas mais frequentes durante entrevistas de emprego.",
             "Oi, tudo bem? Eu sou o Vinibot e estou aqui para ajuda-lo(a), fui programado para responder as perguntas mais comuns em entrevistas de emprego.",
-            "Olá, tudo bem com você? Meu nome é Vinibot e aqui para responder perguntas comuns durante entrevistas de emprego. "
+            "Olá, tudo bem com você? Meu nome é Vinibot e estou aqui para responder perguntas comuns durante entrevistas de emprego. "
         ]
         return randomize(msg);
     },
     askName_init: () => {
         let msg = [
-            "O que deseja perguntar?",
-            "O que você gostaria de perguntar?",
-            "Vamos começar? qual a sua primeira pergunta?"
+            "Qual o seu nome?",
+            "Como você se chama?",
+            
         ]
         return randomize(msg);
     },
@@ -54,9 +54,9 @@ const messages = {
             msg = msgWithoutName
         } else {
             let msgWithName = [
-                "Muito prazer em te conhecer " + param + "!",
-                "É um prazer te conhecer, " + param + "!",
-                "É um imenso prazer te conhecer, " + param + "!",
+                "Muito prazer em te conhecer!",
+                "É um prazer te conhecer!",
+                "É um imenso prazer te conhecer!",
             ]
             msg = msgWithName
         }
@@ -84,7 +84,19 @@ const messages = {
     },
     all_1: () => {
         let msg = [
-            "sobre mim / ponto forte/ ponto fraco/ pretensão salarial/ onde me vejo daqui 5 anos/ habilidades técnicas/ habilidades sociais",
+            "Perguntas ou assuntos que sei responder:",
+        ]
+        return randomize(msg);
+    },
+    all_2: () => {
+        let msg = [
+            "Sei falar sobre mim, sobre meu ponto forte ou ponto fraco, pretensão salarial, como me vejo daqui 5 anos",
+        ]
+        return randomize(msg);
+    },
+    all_3: () => {
+        let msg = [
+            "sobre minhas habilidades técnicas/hardSkills, habilidades sociais/softSkills, meu acesso a estações de trem/metrô",
         ]
         return randomize(msg);
     },
@@ -186,13 +198,37 @@ const messages = {
     },
     q06_4: () => { 
         let msg = [
-            "Listando temos: Java/Spring, JS/Nodejs,Reactjs, SQL/mySQL, noSQL/Firebase-realTimeDatabase"
+            "Listando temos: Java/Spring, JS/Nodejs, Reactjs, SQL/mySQL, noSQL/Firebase-realTimeDatabase"
         ]
         return randomize(msg);
     },
-    q07_1: () => { 
+    q07_1: () => {  // habilidades sociais
         let msg = [
-            "Entre as habilidades sociais, exerço com frequência habilidades comunicativas, de sentimento positivo e assertivas."
+            "Com frequência exerço habilidades comunicativas, de positividade e enfrentamento."
+        ]
+        return randomize(msg);
+    },
+    q07_2: () => { 
+        let msg = [
+            "Gosto de trocar conhecimento, seja em conversas casuais ou buscando soluções "
+        ]
+        return randomize(msg);
+    },
+    q07_3: () => { 
+        let msg = [
+            "Procuro utilizar da boa apresentação e otimismo como posicionamento inicial para ideias ou participações."
+        ]
+        return randomize(msg);
+        },
+    q08_1: () => {  //acesso estacoes
+        let msg = [
+            "Estou próximo as estações Quitaúna e Comandante Sampaio da linha Diamante da CPTM.",
+        ]
+        return randomize(msg);
+    },
+    q08_2: () => { 
+        let msg = [
+            "Até a Barra Funda por exemplo levo em torno de 25 minutos contando com o percurso até a estação."
         ]
         return randomize(msg);
     },

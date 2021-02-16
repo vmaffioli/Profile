@@ -1,7 +1,5 @@
-import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
 import messages from "./messages";
-import myPhoto from "../../assets/img/myphoto.png";
 
 const botName = "Vinibot";
 
@@ -9,15 +7,12 @@ const botName = "Vinibot";
 const config = {
     botName: botName,
     lang: "no",
-    step: "form_init",
+    step: "presentation_init",
     ansCount: 0,
     ansHist: [
       "default"
     ],
-    customComponents: {
-      //header: () => <p><strong>VINIBOT</strong></p>,
 
-    },
     customStyles: {
         botMessageBox: {
           backgroundColor: "#cc0000",

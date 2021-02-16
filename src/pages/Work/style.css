@@ -7,7 +7,7 @@
 
 .btn-chat {
   position: relative;
-  top: 70vh;
+  top: 65vh;
   left: 25%;
 
   width: 33%;
@@ -127,7 +127,8 @@
     }
 
     .btn-chat {
-      top: 155vh;
+      position: relative;
+      top: 150vh;
       left: 0;
 
       width: 90vw;
