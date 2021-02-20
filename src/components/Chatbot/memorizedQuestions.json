@@ -1,0 +1,72 @@
+[
+    {
+        "id": "",
+        "desc": "",
+        "keys": "",
+        "questions": ""
+    },
+    {
+        "id": "memorizedQuestions",
+        "desc": "O que eu sei responder",
+        "keys": [
+            [
+                "voce",
+                "consegue",
+                "sabe"
+            ],
+            [
+                "perguntas",
+                "responder",
+                "perguntar"
+            ]
+        ],
+        "questions": [
+            "quais perguntas voce sabe responder",
+            "quais perguntas voce conhece",
+            "quais perguntas voce consegue responder",
+            "o que voce pode responder",
+            "o que voce sabe responder",
+            "posso perguntar o que",
+            "o que eu posso perguntar",
+            "voce consegue responder o que",
+            "quais as perguntas que voce sabe responder",
+            "quais as perguntas que voce consegue responder"
+        ]
+    },
+    {
+        "id": "whoAmI",
+        "desc": "Sobre mim, um resumo do Vinícius",
+        "keys": [
+            [
+                "sobre",
+                "fale",
+                "saber"
+            ],
+            [
+                "voce",
+                "vinicius"
+            ]
+        ],
+        "questions": [
+            "me conte sobre voce",
+            "gostaria de saber sobre voce",
+            "me fale um pouco sobre voce",
+            "me fale sobre voce",
+            "me conta um pouco sobre de voce",
+            "fale sobre voce",
+            "conte sobre voce",
+            "quero saber sobre voce",
+            "gostaria de saber sobre voce",
+            "me fale sobre o vinicius",
+            "quem e o vinicius",
+            "gostaria de saber sobre o vinicius",
+            "me fale um pouco sobre o vinicius",
+            "me conta um pouco sobre o vinicius",
+            "me fale de voce",
+            "me conte de voce",
+            "me fale do vinicius",
+            "me conte do vinicius"
+
+        ]
+    }
+]

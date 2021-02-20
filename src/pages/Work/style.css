@@ -5,6 +5,13 @@
     height: 100vh;
 }
 
+.chat-container {
+  position: absolute;
+  right: 15vw;
+  bottom: 12vh;
+ 
+}
+
 .btn-chat {
   position: relative;
   top: 65vh;
@@ -35,7 +42,7 @@
 .btn-chat_out {
   position: absolute;
   top: 40vh;
-  left: -25vh;
+  right: -18vh;
 
   width: 100px;
   height: 40px;
@@ -45,7 +52,6 @@
   border: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  transition: all 0.2s cubic-bezier(.4,0,.2,1);
 
   
 }

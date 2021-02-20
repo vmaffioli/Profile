@@ -47,7 +47,9 @@ class ActionProvider {
     message = [
       this.createChatBotMessage(messages.all_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.all_2(msg), { delay: 3000 }),
-      this.createChatBotMessage(messages.all_3(msg), { delay: 5000 })
+      this.createChatBotMessage(messages.all_3(msg), { delay: 5000 }),
+      this.createChatBotMessage(messages.all_4(msg), { delay: 8000 }),
+
 
     ];
     message.forEach(e => {
@@ -64,7 +66,7 @@ class ActionProvider {
     })
   }
 
-  q01 = (msg) => {
+  q01 = (msg) => { //about
     message = [
       this.createChatBotMessage(messages.q01_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.q01_2(msg), { delay: 4000 }),
@@ -75,7 +77,7 @@ class ActionProvider {
     })
   }
 
-  q02 = (msg) => {
+  q02 = (msg) => { //forte
     message = [
       this.createChatBotMessage(messages.q02_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.q02_2(msg), { delay: 4000 })
@@ -86,7 +88,7 @@ class ActionProvider {
     })
   }
 
-  q03 = (msg) => {
+  q03 = (msg) => { //fraco
     message = [
       this.createChatBotMessage(messages.q03_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.q03_2(msg), { delay: 4000 })
@@ -96,7 +98,7 @@ class ActionProvider {
     })
   }
 
-  q04 = (msg) => {
+  q04 = (msg) => { //pretensao
     message = [
       this.createChatBotMessage(messages.q04_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.q04_2(msg), { delay: 4000 })
@@ -107,7 +109,7 @@ class ActionProvider {
     })
   }
 
-  q05 = (msg) => {
+  q05 = (msg) => { //5anos
     message = [
       this.createChatBotMessage(messages.q05_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.q05_2(msg), { delay: 4000 }),
@@ -119,12 +121,12 @@ class ActionProvider {
     })
   }
 
-  q06 = (msg) => {
+  q06 = (msg) => { //habil tec
     message = [
       this.createChatBotMessage(messages.q06_1(msg), { delay: 1000 }),
-      this.createChatBotMessage(messages.q06_2(msg), { delay: 3000 }),
-      this.createChatBotMessage(messages.q06_3(msg), { delay: 5000 }),
-      this.createChatBotMessage(messages.q06_4(msg), { delay: 8000 }),
+      this.createChatBotMessage(messages.q06_2(msg), { delay: 3500 }),
+      this.createChatBotMessage(messages.q06_3(msg), { delay: 6000 }),
+      this.createChatBotMessage(messages.q06_4(msg), { delay: 9000 }),
 
     ];
     message.forEach(e => {
@@ -132,7 +134,7 @@ class ActionProvider {
     })
   }
 
-  q07 = (msg) => {
+  q07 = (msg) => { //habil soc
     message = [
       this.createChatBotMessage(messages.q07_1(msg), { delay: 1000 }),
       this.createChatBotMessage(messages.q07_2(msg), { delay: 3000 }),
@@ -145,11 +147,98 @@ class ActionProvider {
     })
   }
 
-  q08 = (msg) => {
+  q08 = (msg) => { //acesso estacao
     message = [
-      this.createChatBotMessage(messages.q08_1(msg), { delay: 1000 }),
-      this.createChatBotMessage(messages.q08_2(msg), { delay: 3000 }),
+      this.createChatBotMessage(messages.q08_3(msg), { delay: 1000 }),
+      this.createChatBotMessage(messages.q08_1(msg), { delay: 3000 }),
       this.createChatBotMessage(messages.q08_2(msg), { delay: 5000 }),
+
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+
+  q09 = (msg) => { //fortefraco
+    message = [
+      this.createChatBotMessage(messages.q09_1(msg), { delay: 1000 }),
+      this.createChatBotMessage(messages.q02_1(msg), { delay: 3000 }),
+      this.createChatBotMessage(messages.q02_2(msg), { delay: 5500 }),
+      this.createChatBotMessage(messages.q09_2(msg), { delay: 8000 }),
+      this.createChatBotMessage(messages.q03_1(msg), { delay: 10000 }),
+      this.createChatBotMessage(messages.q03_2(msg), { delay: 13000 })
+
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+
+  q10 = (msg) => { //habiltecsoc
+    message = [
+      this.createChatBotMessage(messages.q10_1(msg), { delay: 1000 }),
+      this.createChatBotMessage(messages.q06_1(msg), { delay: 3000 }),
+      this.createChatBotMessage(messages.q06_2(msg), { delay: 5500 }),
+      this.createChatBotMessage(messages.q06_3(msg), { delay: 9000 }),
+      this.createChatBotMessage(messages.q06_4(msg), { delay: 11500 }),
+      this.createChatBotMessage(messages.q10_2(msg), { delay: 14000 }),
+      this.createChatBotMessage(messages.q07_1(msg), { delay: 16000 }),
+      this.createChatBotMessage(messages.q07_2(msg), { delay: 18500 }),
+      this.createChatBotMessage(messages.q07_3(msg), { delay: 21500 })
+
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+  q11 = (msg) => { //tempoprograma
+    message = [
+      this.createChatBotMessage(messages.q11_1(msg), { delay: 1000 }),
+      this.createChatBotMessage(messages.q11_2(msg), { delay: 3000 }),
+      this.createChatBotMessage(messages.q11_3(msg), { delay: 6000 }),
+      this.createChatBotMessage(messages.q11_4(msg), { delay: 9000 }),
+      this.createChatBotMessage(messages.q11_5(msg), { delay: 12000 }),
+   
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+  q12 = (msg) => { //signo
+    message = [
+      this.createChatBotMessage(messages.q12_1(msg), { delay: 1000 }),
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+  q13 = (msg) => { //motivacao
+    message = [
+      this.createChatBotMessage(messages.q13_1(msg), { delay: 1000 }),
+      this.createChatBotMessage(messages.q13_2(msg), { delay: 3000 }),
+      this.createChatBotMessage(messages.q13_3(msg), { delay: 6000 }),
+      this.createChatBotMessage(messages.q13_4(msg), { delay: 9000 }),
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+  q14 = (msg) => { //situaçoes
+    message = [
+      this.createChatBotMessage(messages.q14_1(msg), { delay: 1000 }),
+
+    ];
+    message.forEach(e => {
+      this.addMessageToState(e);
+    })
+  }
+  q15 = (msg) => { //realizaçoes
+    message = [
+      this.createChatBotMessage(messages.q15_1(msg), { delay: 1000 }),
+      this.createChatBotMessage(messages.q15_2(msg), { delay: 3000 }),
+      this.createChatBotMessage(messages.q15_3(msg), { delay: 5500 }),
+      this.createChatBotMessage(messages.q15_4(msg), { delay: 7500 }),
+      this.createChatBotMessage(messages.q15_5(msg), { delay: 10000 }),
 
     ];
     message.forEach(e => {

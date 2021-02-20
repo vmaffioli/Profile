@@ -30,10 +30,6 @@ code {
     position: absolute;
     right: 15vw;
     bottom: 9vh;
-    z-index: 1;
-    border-color: black;
-    border-style: solid;
-    border-radius: 3%;
     width: 275px;
     height: 500px;
   }
@@ -41,16 +37,6 @@ code {
 
 
  
-
-  .react-chatbot-kit-chat-input-container {
-    width: 275px;
-  }
-
-
-  .react-chatbot-kit-chat-header {
-    width: 250px;
-
-  }
 
 
 
