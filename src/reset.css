@@ -25,22 +25,6 @@ code {
     monospace;
 }
 
-@media(min-width: 452px) {
-  .chat-container {
-    position: absolute;
-    right: 15vw;
-    bottom: 9vh;
-    width: 275px;
-    height: 500px;
-  }
-  
-
-
- 
-
-
-
-}
 
 
 
@@ -58,11 +42,7 @@ code {
     overflow-y: auto;
   }
   
-  .chat-container{
-    height: 501px;
-    width: 275px;
-
-  }
+ 
 }
 
 

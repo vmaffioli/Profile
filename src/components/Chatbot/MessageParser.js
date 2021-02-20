@@ -21,16 +21,10 @@ class MessageParser {
       this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
     } else if (config.step === "form_init") {
 
-      if (questions.compare(message)) {
-        this.actionProvider.q01(message.normalize("NFD"));
+      
+      this.actionProvider.sendAnswer(questions.compare(message.normalize("NFD")))
 
-      } else {
-        this.actionProvider.dont_know();
-      }
     }
-
-
-
   }
 }
 

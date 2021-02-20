@@ -3,7 +3,8 @@
         "id": "",
         "desc": "",
         "keys": "",
-        "questions": ""
+        "questions": "",
+        "answers": ""
     },
     {
         "id": "memorizedQuestions",
@@ -31,7 +32,12 @@
             "voce consegue responder o que",
             "quais as perguntas que voce sabe responder",
             "quais as perguntas que voce consegue responder"
-        ]
+        ],
+        "answers": [
+            "%%all%%",
+            "%%all%%"
+
+        ] 
     },
     {
         "id": "whoAmI",
@@ -67,6 +73,517 @@
             "me fale do vinicius",
             "me conte do vinicius"
 
+        ],
+        "answers": [
+            "Me chamo Vinícius, tenho 27 anos e possuo 2 anos de experiência com programação em geral.",
+            "Desses 2 anos, tenho como experiência profissional 1 ano de estágio em desenvolvimento Java/Sql pela BRQ.",
+            "Amo programar, sou autodidata e possuo um plano de estudos diário, onde atualmente me dedico aos derivados de JAVA e JavaScript."
+        ] 
+    },
+    {
+        "id": "pretensaoSalarial",
+        "desc": "Minha pretensão salarial",
+        "keys": [
+            [
+                "pretensao",
+                "expectativa"
+            ],
+            [
+                "salarial",
+                "salario"
+            ]
+        ],
+        "questions": [
+            "qual a sua pretensao salarial",
+            "gostaria de saber sua pretensao salarial",
+            "me informe sua pretensao salarial",
+            "qual a sua pretensao salarial receber pagamento",
+            "qual sua expectativa de salario",
+            "gostaria de saber sua expectativa de salario",
+            "me informe sua expectativa de salario"
+        ],
+        "answers": [
+            "Minha pretensão é de 2500",
+            "Porém estou totalmente aberto a negociações."
+        ]
+
+    },
+    {
+        "id": "pontoForte",
+        "desc": "Sobre meu ponto forte",
+        "keys":  [
+            "ponto",
+            "forte"
+        ],
+        "questions": [
+            "qual seu ponto forte",
+            "qual e o seu ponto forte",
+            "qual voce considera seu ponto forte",
+            "para voce, qual e o seu ponto forte",
+            "gostaria de saber seu ponto forte",
+            "qual caracteristica voce considera seu ponto forte",
+            "me diz qual e o seu ponto forte",
+            "e o seu ponto forte",
+            "agora seu ponto forte"
+        ],
+        "answers": [
+            "Minha persistência, não desisto de resolver ou enfrentar situações desafiadoras",
+            "Seja um bug, algum aprendizado complexo ou situação que exijam mudanças repentinas."
+
+        ]
+    },
+    {
+        "id": "pontoFraco",
+        "desc": "Sobre meu ponto fraco",
+        "keys": [
+            "ponto",
+            "fraco"
+        ],
+        "questions": [
+            "qual seu ponto fraco",
+            "qual e o seu ponto fraco",
+            "qual voce considera seu ponto fraco",
+            "para voce, qual e o seu ponto fraco",
+            "gostaria de saber seu ponto fraco",
+            "qual caracteristica vocee considera seu ponto fraco",
+            "me diz qual e o seu ponto fraco",
+            "e o seu ponto fraco",
+            "agora o seu ponto fraco"
+        ],
+        "answers": [
+            "Ansiedade",
+            "Eu me cobro muito e as vezes preciso lidar com as frustrações, é um ponto que estou trabalhando."
+        ]
+    },
+    {
+        "id": "cincoAnos",
+        "desc": "Como eu me vejo daqui a cinco anos",
+        "keys":  [
+            "cinco",
+            "anos"
+        ],
+        "questions": [
+            "onde voce se ve daqui cinco anos",
+            "como voce se ve daqui a cinco anos",
+            "como voce quer se ver daqui a cinco anos",
+            "onde voce quer estar daqui cinco anos",
+            "como voce quer ser daqui cinco anos",
+            "onde voce quer estar daqui a cinco anos",
+            "como voce quer estar daqui a cinco anos",
+            "daqui cinco anos voce se ve como"
+        ],
+        "answers": [
+            "hmm..daqui cinco anos?",
+            "Quero estar a frente de projetos e ideias inovadoras",
+            "vou carregar comigo a vontade de aprender e continuar avançando para ter autonomia de criação."
+        ]
+    },
+    {
+        "id": "habilidadesTecnicas",
+        "desc": "Minhas habilidades técnicas ou hard skills",
+        "keys": [
+            [
+                "habilidades",
+                "skills"
+            ],
+            [
+                "tecnicas",
+                "hard"
+            ]
+        ],
+        "questions": [
+            "quais sao suas habilidades tecnicas",
+            "me fale sobre suas habilidades tecnicas",
+            "gostaria de saber sobre suas habilidades tecnicas",
+            "quais suas habilidades tecnicas",
+            "agora me fale sobre suas habilidades tecnicas",
+            "e suas habilidades tecnicas"
+        ],
+        "answers": [
+            "Minhas principais habilidades são desenvolvimento back-end Java e Nodejs",
+            "Fiz estágio em desenvolvimento de sistemas e participei de projetos bacanas em Java/SQL que me deram boa noções iniciais em projetos grandes",
+            "Depois dessa experiência continuei estudando, me aprofundei um pouco mais em JavaScript, Nodejs e ReactJs (Esta página é um exemplo o/)",
+            "Listando temos: Java/Spring, JS/Nodejs, Reactjs, SQL/mySQL, noSQL/Firebase-RealTimeDatabase"
+        ]
+    },
+    {
+        "id": "habilidadesSociais",
+        "desc": "Minhas habilidades sociais ou soft skills",
+        "keys": [
+            [
+                "habilidades",
+                "skills"
+            ],
+            [
+                "sociais",
+                "soft"
+            ]
+        ],
+        "questions": [
+            "me fale sobre suas habilidades sociais",
+            "quais sao suas habilidades sociais",
+            "gostaria de saber sobre suas habilidades sociais",
+            "quais suas habilidades sociais",
+            "agora me fale sobre suas habilidades sociais",
+            "e suas habilidades sociais"
+
+        ],
+        "answers": [
+            "Com frequência exerço habilidades comunicativas, de positividade e enfrentamento.",
+            "Gosto de trocar conhecimento, seja em conversas casuais ou buscando soluções ",
+            "Procuro utilizar da boa apresentação e otimismo como posicionamento inicial para ideias ou participações."
+        ]
+    },
+    {
+        "id": "acessoLocalizacao",
+        "desc": "Sobre minha localização e acesso a estações de trem",
+        "keys": [
+            [
+                "proxima",
+                "perto",
+                "proximo",
+                "voce"
+            ],
+            [
+                "estaçao",
+                "localiza",
+                " mora ",
+                "reside"
+            ]
+        ],
+        "questions": [
+            "voce possui facil acesso a qual estaçao",
+            "voce possui acesso a qual estaçao",
+            "voce possui acesso a alguma estaçao",
+            "que estaçao voce possui acesso",
+            "qual estaçao mais proxima da sua casa",
+            "qual estaçao mais proxima da sua residencia",
+            "qual estaçao mais proxima de voce",
+            "voce esta perto de qual estaçao",
+            "qual estaçao mais perto de voce",
+            "qual estaçao mais proxima da sua casa",
+            "voce esta proximo de qual estaçao",
+            "qual estaçao e a mais proxima da sua casa",
+            "qual estaçao e a mais proxima da sua residencia",
+            "qual estaçao e a mais proxima de voce",
+            "voce mora proximo a alguma estaçao",
+            "voce mora proximo a qual estaçao",
+            "voce mora perto de alguma estaçao",
+            "voce mora perto de qual estaçao",
+            "onde voce mora",
+            "onde voce reside",
+            "onde voce e residente",
+            "aonde voce mora",
+            "qual sua localizaçao",
+            "onde voce esta localizado"
+
+
+        ],
+        "answers": [
+            "Moro em Osasco, São Paulo.",
+            "Estou próximo das estações Quitaúna e Comandante Sampaio da linha Diamante da CPTM.",
+            "Até a Barra Funda por exemplo levo em torno de 25 minutos contando com o percurso até a estação."
+        ]
+    },
+        {
+        "id": "pontoForteFraco",
+        "desc": "Sobre meus pontos forte e fraco",
+        "keys": [
+            [
+                "pontos",
+                "ponto"
+            ],
+            "fraco",
+            "forte"
+        ],
+        "questions": [
+            "qual seu ponto forte e fraco",
+            "qual e o seu ponto forte e fraco",
+            "quais sao seus pontos forte e o seus pontos fraco",
+            "qual seu ponto forte e o seu ponto fraco",
+            "quais sao os seus pontos forte e fraco",
+            "qual voce considera seu ponto forte e ponto fraco",
+            "para voce, qual e o seu ponto forte e ponto fraco",
+            "gostaria de saber seu ponto forte e ponto fraco",
+            "qual caracteristica voce considera seu ponto forte e qual vc considera seu ponto fraco",
+            "me diz qual e o seu ponto forte e o seu ponto fraco",
+            "me diz qual e o seu ponto forte e fraco",
+            "me diz quais sao os seus pontos forte e fraco",
+            "e o seus pontos forte e fraco",
+            "e o seu ponto forte e fraco",
+            "agora seu ponto forte e fraco",
+            "agora seus ponto forte e fraco"
+
+
+        ],
+        "answers": [
+            "Bom, meu ponto forte é:",
+            "Minha persistência, não desisto de resolver ou enfrentar situações desafiadoras",
+            "Seja um bug, algum aprendizado complexo ou situação que exijam mudanças repentinas.",
+            "E o meu ponto fraco:",
+            "Ansiedade",
+            "Eu me cobro muito e as vezes preciso lidar com as frustrações, é um ponto que estou trabalhando."
+        ]
+    },
+    {
+        "id": "habilTecSoc",
+        "desc": "Minhas habilidades técnicas e sociais (soft e hard skills)",
+        "keys": [
+            "habilidades",
+            [
+                "habilidades",
+                "skills"     
+            ],
+            [
+                "fale",
+                "conte",
+                "saber",
+                "hard",
+                "tecnicas"
+
+            ],
+            [         
+                "suas",
+                "sobre",
+                "soft",
+                "sociais"
+
+            ]
+        ],
+        "questions": [
+            "me fale sobre suas habilidades sociais e tecnicas",
+            "quais sao suas habilidades sociais e tecnicas",
+            "gostaria de saber sobre suas habilidades sociais e tecnicas",
+            "quais suas habilidades sociais e tecnicas",
+            "agora me fale sobre suas habilidades sociais e tecnicas",
+            "e suas habilidades sociais e tecnicas",
+            "me fale sobre suas habilidades",
+            "quais sao suas habilidades",
+            "gostaria de saber sobre suas habilidades",
+            "quais suas habilidades",
+            "agora me fale sobre suas habilidades",
+            "e suas habilidades"
+
+        ],
+        "answers":[
+            "Vou dividir em duas seções, sendo a primeira sobre minhas habilidades técnicas/hard skills:",
+            "Minhas principais habilidades são desenvolvimento back-end Java e Nodejs",
+            "Fiz estágio em desenvolvimento de sistemas e participei de projetos bacanas em Java/SQL que me deram boa noções iniciais em projetos grandes",
+            "Depois dessa experiência continuei estudando, me aprofundei um pouco mais em JavaScript, Nodejs e ReactJs (Esta página é um exemplo o/)",
+            "Listando temos: Java/Spring, JS/Nodejs, Reactjs, SQL/mySQL, noSQL/Firebase-RealTimeDatabase",
+            "E a segunda é sobre minhas habilidades sociais/skills:",
+            "Com frequência exerço habilidades comunicativas, de positividade e enfrentamento.",
+            "Gosto de trocar conhecimento, seja em conversas casuais ou buscando soluções ",
+            "Procuro utilizar da boa apresentação e otimismo como posicionamento inicial para ideias ou participações."
+        ]    
+
+    },
+    {
+        "id": "tempoProgramador",
+        "desc": "Meu tempo de experiência e contato com desenvolvimento web",
+        "keys": [
+            "tempo",
+            [
+                "programaçao",
+                "programador",
+                "desenvolvimento",
+                "desenvolve",
+                "experiencia",
+                "programa"
+
+            ]
+        ],
+        "questions": [
+            "ha quanto tempo voce programa",
+            "a quanto tempo voce programa",
+            "quanto tempo voce tem de experiencia como programador",
+            "quanto anos fazem que voce programa",
+            "ha quanto tempo voce estuda programaçao",
+            "ha quanto tempo faz que voce estuda programaçao",
+            "faz quanto tempo que voce estuda programaçao",
+            "faz quanto tempo que voce trabalha com programaçao",
+            "faz quanto tempo que voce trabalha com desenvolvimento web",
+            "faz quanto tempo que voce estuda desenvolvimento web",
+            "ha quanto tempo voce desenvolve para web",
+            "quanto anos fazem que voce desenvolve para web"
+        ],
+        "answers": [
+            "Eu tenho 2 anos de experiência com programação, comecei a programar Java com aulas da Alura e COBOL com aulas da GrandePorte (os certificados estão disponíveis no meu linkedin - linkedin/vinicius-maffioli)",
+            "No meu primeiro ano (durante meu estágio) eu já realizava cruds, montava ambientes com eclipse e websphere, usava versionamento GIT e criava procedures e massa de dados (mySQL)",
+            "Após esse periodo passei mais 1 ano estudando desenvolvimento web com Node e React.js, além de estudar bancos de dados noSQL, como Firebase Real Time Database.",
+            "No meu repositório pessoal no GitHub é possivel observar que me aventurei academicamente em projetos para bots (discord.js e chatbots em React) github/vmaffioli"
+
+        ]
+    },
+    {
+        "id": "meuSigno",
+        "desc": "Sobre meu signo",
+        "keys": [
+            "seu",
+            "signo"
+        ],
+        "questions": [
+            "qual seu signo",
+            "qual e o seu signo",
+            "gostaria de saber seu signo",
+            "me fale seu signo",
+            "me fale sobre seu signo",
+            "voce e de qual signo",
+            "voce e de que signo",
+            "que signo voce e",
+            "e seu signo",
+            "gostaria de saber qual e o seu signo",
+            "gostaria de saber o seu signo"
+
+
+        ],
+        "answers": [
+            "Meu signo é Touro com ascendente em Libra e lua em Câncer :)"
+        ]
+    },
+    {
+        "id": "minhaMotivacao",
+        "desc": "Sobre o que me motiva a ser um programador",
+        "keys": [
+            [
+                "sua",
+                "voce",
+                "te",
+                "fez",
+                "faz"
+            ],
+            [
+                "escolhe",
+                "querer",
+                "estudar",
+                "motivo",
+                "motiva"
+
+            ]
+        ],
+        "questions": [
+            "o que te motivou a começar a programar",
+            "o que te motivou a programar",
+            "o que te motivou a estudar programaçao",
+            "o que te motivou a se tornar programador",
+            "o que fez voce pensar em começar a programar",
+            "o que fez voce pensar em estudar programaçao",
+            "o que te fez começar a programar",
+            "o que te fez começar estudar programaçao",
+            "o que te motiva a programar",
+            "o que te motiva a estudar",
+            "o que te motiva a ser um programador",
+            "o que motiva voce a estudar",
+            "o que motiva voce a ser um programador",
+            "o que motivou voce escolher ser programador",
+            "o que te motivou a escolher ser programador",
+            "o que motivou voce escolher a area do ti",
+            "o que motivou voce escolher o ti",
+            "porque voce quer ser um programador",
+            "porque voce resolveu se tornar um programador",
+            "porque voce entrou na area do ti",
+            "porque voce escolheu a area do ti",
+            "porque voce escolheu programacao",
+            "porque voce escolheu ser programador",
+            "porque voce escolheu programar",
+            "porque voce escolheu essa area",
+            "o que te fez querer entrar no ti",
+            "o que te fez querer ser programador",
+            "o que te fez querer ser desenvolvedor",
+            "o que te fez querer programar",
+            "o que te levou escolher a area da programaçao",
+            "o que te levou escolher a area do ti",
+            "o que te levou escolher programaçao",
+            "o que te levou escolher ser programador",
+            "o que te fez escolher a area da programaçao",
+            "o que te fez escolher a area do ti",
+            "o que te fez escolher programaçao",
+            "o que te fez escolher ser programador"
+        ],
+        "answers": [
+            "Desde muito novo tenho contato com computadores, sempre fui muito curioso e no passado tive algumas experiências pessoais com envolvendo motor Elysium e scripts Perl",
+            "Quando minha filha nasceu, resolvi resgatar essa experiência e comecei a estudar Sistemas da informação ","Amo programar, sou autodidata e possuo um plano de estudos diário, onde atualmente me dedico aos derivados de JAVA e JavaScript.",
+            "Um tempo depois eu consegui minha oportunidade de estágio e pude começar a usar essa habilidade para o mercado profissional, foi amor a primeira vista com Java e Nodejs",
+            "Sigo desde então aprendendo e aprimorando minhas skills"
+        ]
+    },
+    {
+        "id": "minhasRealizaçoes",
+        "desc": "Sobre alguma realização minha no trabalho",
+        "keys": [
+            [
+                "qual",
+                "conte",
+                "fale"
+            ],
+            [
+                "realizaçoes",
+                "realizaçao",
+                "conquista"
+            ]
+        ],
+        "questions": [
+            "fale sobre sua maior realizaçao no trabalho",
+            "fale sobre sua maior realizaçao",
+            "fale sobre sua maior conquista no trabalho",
+            "fale sobre sua maior conquista",
+            "gostaria de saber sobre alguma realizaçao sua no trabalho",
+            "gostaria de saber sobre alguma realizaçao sua",
+            "me conte sobre alguma realizaçao sua no trabalho",
+            "me conte sobre alguma realizaçao sua",
+            "me conte sobre alguma conquista sua no trabalho",
+            "me conte sobre alguma conquista sua",
+            "me conte sobre sua maior realizaçao no trabalho",
+            "me conte sobre sua maior realizaçao",
+            "me conte sobre sua maior conquista no trabalho",
+            "me conte sobre sua maior conquista",
+            "me fale sobre suas realizações profissionais",
+            "me fale sobre suas realizações no trabalho",
+            "me fale sobre suas realizações",
+            "gostaria de saber sobre suas realizações profissionais",
+            "gostaria de saber sobre suas realizações no trabalho",
+            "gostaria de saber sobre suas realizações",
+            "me conte sobre suas realizações profissionais",
+            "me conte sobre suas realizações no trabalho",
+            "me conte sobre suas realizações"
+        ],
+        "answers": [
+            "Diariamente eu busco por realizações e conquistas, esse chat aqui mesmo é uma delas",
+            "Mas dentro do cotidiano profissional já precisei automatizar alterações em ambientes Cobol, estruturar bancos de dados mySQL diretamente com o cliente ",
+            "Pude estar presente na execução e entrega de dois projetos (back end java)",
+            "Além de criar diversos scripts com vbs e hta pra galera! haha",
+            "Resumindo: realização para mim é superar expectativas, se fazer presente e oferendo soluções"
+
+        ]
+    },
+    {
+        "id": "situaçaoDificil",
+        "desc": "Alguma situação dificil que eu passei no trabalho",
+        "keys": [
+            [
+                "qual",
+                "fale",
+                "conte"
+            ],
+            [
+                "dificil",
+                "desafio",
+                "situaçao"
+
+            ]
+        ],
+        "questions": [
+            "me conte alguma situaçao dificil no trabalho",
+            "me fale sobre alguma situaçao dificil no trabalho",
+            "gostaria de saber sobre algo dificil no trabalho",
+            "gostaria de saber sobre alguma situaçao dificil no trabalho",
+            "me conte sobre alguma situaçao dificil no trabalho"
+        ],
+        "answers": [
+            "Já lidei com situações de extrema pressão",
+            "Onde precisei reavaliar minha conduta e forma de analisar o meu trabalho",
+            "São situações que inicialmente são desgastantes mas que ao final da experiência nos trazem muitos beneficios"
         ]
     }
+
 ]

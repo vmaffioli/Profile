@@ -7,7 +7,7 @@ const botName = "Vinibot";
 const config = {
     botName: botName,
     lang: "no",
-    step: "form_init",
+    step: "presentation_init",
     ansCount: 0,
     ansHist: [
       "default"
@@ -18,7 +18,7 @@ const config = {
           backgroundColor: "#cc0000",
         },
         chatButton: {
-          backgroundColor: "#000",
+          backgroundColor: "lightgray",
         },
         
       },
