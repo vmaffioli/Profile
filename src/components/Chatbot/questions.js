@@ -131,21 +131,99 @@ function searchByCounter(str) { //procura se string prossui contador true false
     return result
 }
 
-function removeCounter(str) { //remove contador da string para comparações
+function removeCounter(str) { //remove contador da string para comparações - add validacao
     return str.substring(0, str.length - 5)
 }
 
-function analyzeMemories(recognizingSomething) { //analisa lista de itens reconhecidos
+function getCounter(str) { //add validacao
+    return parseInt(str.substring(str.length - 3, str.length))
+}
+
+function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior contador informado pela AnalyzeKeys (independente de quantas keys forem)
+    let memoryCache
+    for (let i = 0; i < array.length; i++) { //filtra os contadores
+        if (memoryCache) {
+            if (getCounter(array[i]) >= getCounter(memoryCache[0])) {
+                memoryCache.unshift(array[i])
+            } else {
+                memoryCache.push(array[i])
+            }
+        } else {
+            memoryCache = []
+            memoryCache.unshift(array[i])
+        }
+    } //para proximas ideias no reconhecimento
+    //console.log(memoryCache)
+
+    let moreLikely = [memoryCache[0]] // filtra cache com o maior(ou maiores iguais) contador(res)  -- add validacao
+    for (let i = 1; i < memoryCache.length; i++) {
+          if (getCounter(memoryCache[i]) === getCounter(moreLikely[0])) {
+            moreLikely.push(removeCounter(memoryCache[i]))
+        }
+    }
+    moreLikely[0]=removeCounter(moreLikely[0])
+
+    return [moreLikely, memoryCache]
+}
+
+function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e final/ compara as palavras do input com as questoes memorizadas
+    let partialAnalysis = [] //analise parcial
+
+    hmmIRemember.forEach(itemRemembered => {
+
+        rememberQuestions(memorizedQuestions).forEach(obj => { //carrega cada objetos do json
+
+            if (obj.id === itemRemembered) { //compara cada palavra do input com da pergunta gravada na memoria
+                let memorizedQuestion = obj.questions
+                let resultList = []
+                for (let i = 0; i < memorizedQuestion.length; i++) { //divide frases em palavras
+                    let splitedMemQuestion = memorizedQuestion[i].split(" ")
+                    let splitedInputUser = userInput.split(" ")
+                    let counterEqualWords = 0
+
+                    for (let ii = 0; ii < splitedMemQuestion.length; ii++) { //compara as palavras
+                        const wordInMem = splitedMemQuestion[ii]
+                        for (let iii = 0; iii < splitedInputUser.length; iii++) {
+                            const wordInInput = splitedInputUser[iii]
+                            if(wordInInput===wordInMem){
+                                counterEqualWords++ // contadoooor
+                            }
+                        }
+                    }
+                    resultList.push(counterEqualWords)
+                }
+                let result = resultList[0] //add validacao
+                for(let ii=0;ii<resultList.length;ii++){ //filtra o maior contador
+                    if(resultList[ii]>result){
+                        result=resultList[ii]
+                    }
+                }
+                partialAnalysis.push([obj.id,result])
+            }
+        })
+    })
+
+    let finalAnalisys // analise final
+    if(partialAnalysis.length>1){ //confere se apos analisar a questao, ainda existe um empate
+        finalAnalisys = "EMPATE"
+    } else {
+        finalAnalisys = partialAnalysis[0][0]
+    }
+
+    return finalAnalisys
+}
+
+function analyzeKeys(recognizingSomething) { //analisa lista de keys reconhecidas
     let thingsList = []
     let alreadyRecognized = false
 
-    for (let i = 0; i < recognizingSomething.length; i++) {
+    for (let i = 0; i < recognizingSomething.length; i++) {//separa os itens reconhecidos
         const itemRecognized = recognizingSomething[i]
 
-        for (let ii = 0; ii < thingsList.length; ii++) {
+        for (let ii = 0; ii < thingsList.length; ii++) { //separa os itens memorizados
             const itemMemorized = thingsList[ii]
 
-            if (itemMemorized === itemRecognized) {
+            if (itemMemorized === itemRecognized) { //compara
                 alreadyRecognized = true
             } else {
 
@@ -168,7 +246,7 @@ function analyzeMemories(recognizingSomething) { //analisa lista de itens reconh
                 if (removeCounter(thing) === itemRecognized) {
                     counter++
                     let numbers = parseInt(thing.substring(thing.length - 3, thing.length)) + 1
-                    thingsList[ii] = buildStringWithCounter(thingsList[ii].substring(0, thing.length-3), numbers)
+                    thingsList[ii] = buildStringWithCounter(thingsList[ii].substring(0, thing.length - 3), numbers)
 
                 } else if (thing === itemRecognized) {
                     thingsList[ii] = buildStringWithCounter(thingsList[ii] + prefixCounter, counter)
@@ -216,22 +294,20 @@ const questions = {
                     compareWords(wordInUserInput, keys, memorizedQuestion)
                 }
             })
-
-            console.log(analyzeMemories(recognizingSomething)) //analisa as keys identificadas e processa qual delas foi a mais acessada 
-            //retorna lista com id da pergunta memorizada + prefixo para identificação do contador e o contador 0 a 999 se passar registra err - ver isso depois
-
-            
         })
+        const myBrainIsArching = thinkingAboutKeys(analyzeKeys(recognizingSomething))//analisa as keys identificadas e processa qual delas foi a mais acessada 
+        //const keyCompareCache = myBrainIsArching[1]//para futuras atualizacoes
+        const hmmIRemember = myBrainIsArching[0]
 
-
-
-
-
-
-
+        console.log(analyzeQuestion(hmmIRemember, userInput)) //envia o que passou na validacao
 
         return result;
     },
+
+
+
+
+
     default: (request) => { //exemplo
         let qContent = []
         let qKey = [] // permite usar 
