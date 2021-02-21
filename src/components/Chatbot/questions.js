@@ -1,6 +1,7 @@
 import memorizedQuestions from "./memorizedQuestions.json";
 
 
+
 function preventStutter(word) { //pra evitar que os proximos resultados nao saim embaralhados
     return " " + word + " "
 }
@@ -28,6 +29,7 @@ function sameWords(userInput) { //jsonificar isso aquiiiii
         "realizacoes",
         "realizacao",
         "conquistas",
+        "localizacao"
 
     ]
     let sameWords_out = [
@@ -51,6 +53,8 @@ function sameWords(userInput) { //jsonificar isso aquiiiii
         "realizaçoes",
         "realizaçao",
         "conquista",
+        "localizaçao"
+
 
     ]
     for (let i = 0; i < sameWords_in.length; i++) {
@@ -148,11 +152,11 @@ function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior con
 
     let moreLikely = [memoryCache[0]] // filtra cache com o maior(ou maiores iguais) contador(res)  -- add validacao
     for (let i = 1; i < memoryCache.length; i++) {
-          if (getCounter(memoryCache[i]) === getCounter(moreLikely[0])) {
+        if (getCounter(memoryCache[i]) === getCounter(moreLikely[0])) {
             moreLikely.push(removeCounter(memoryCache[i]))
         }
     }
-    moreLikely[0]=removeCounter(moreLikely[0])
+    moreLikely[0] = removeCounter(moreLikely[0])
 
     return [moreLikely, memoryCache]
 }
@@ -176,7 +180,7 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
                         const wordInMem = splitedMemQuestion[ii]
                         for (let iii = 0; iii < splitedInputUser.length; iii++) {
                             const wordInInput = splitedInputUser[iii]
-                            if(wordInInput===wordInMem){
+                            if (wordInInput === wordInMem) {
                                 counterEqualWords++ // contadoooor
                             }
                         }
@@ -184,19 +188,30 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
                     resultList.push(counterEqualWords)
                 }
                 let result = resultList[0] //add validacao
-                for(let ii=0;ii<resultList.length;ii++){ //filtra o maior contador
-                    if(resultList[ii]>result){
-                        result=resultList[ii]
+                for (let ii = 0; ii < resultList.length; ii++) { //filtra o maior contador
+                    if (resultList[ii] > result) {
+                        result = resultList[ii]
                     }
                 }
-                partialAnalysis.push([obj.id,result])
+                partialAnalysis.push([obj.id, result])
             }
         })
     })
 
     let finalAnalisys // analise final
-    if(partialAnalysis.length>1){ //confere se apos analisar a questao, ainda existe um empate
-        finalAnalisys = "EMPATE"
+    if (partialAnalysis.length > 1) { //confere se apos analisar a questao, ainda existe um empate
+        finalAnalisys = []
+        finalAnalisys.push("%%dontknow%%")
+
+        
+        for(let i=0;i<partialAnalysis.length;i++){
+            if(i===0){
+                finalAnalisys.push(partialAnalysis[i][0])
+            } else if ((i>0)||(partialAnalysis[i][1]===finalAnalisys[i-1][0])){
+                finalAnalisys.push(partialAnalysis[i][0])
+            }
+        }
+
     } else {
         finalAnalisys = partialAnalysis[0][0]
     }
@@ -225,9 +240,7 @@ function analyzeKeys(recognizingSomething) { //analisa lista de keys reconhecida
                     }
                 }
             }
-
         }
-
         let prefixCounter = "%%"
         let counter = 0
         if (alreadyRecognized) {
@@ -255,12 +268,41 @@ function analyzeKeys(recognizingSomething) { //analisa lista de keys reconhecida
 
 function getAnswersById(id) { // retorna respostas do json pelo id da pergunta
     let result
-    for(let i=0;i<memorizedQuestions.length;i++){
-        const memorizedId = memorizedQuestions[i].id
-        if(memorizedId===id){
-            result = memorizedQuestions[i].answers
+
+    if(Array.isArray(id)){ // se nao souber responder - novo
+        result = []
+        for(let i=0;i<id.length;i++){
+            const eachId = id[i]
+
+            for (let ii = 0; ii < memorizedQuestions.length; ii++) {
+                const memorizedId = memorizedQuestions[ii].id
+
+                if(result[0] === undefined ){ 
+                    result.push("Eu não entendi muito bem a sua pergunta") 
+                    result.push("Você quis dizer alguns dos temas abaixo?") 
+                }
+                if (memorizedId === eachId) {
+                    result.push(memorizedQuestions[ii].desc)
+                }
+            }
+
+        }
+
+    } else {
+        if (id === "%%dontknow%%") { // se nao souber responder - antigo
+            result = [id]
+    
+        } else { //se souber
+            for (let i = 0; i < memorizedQuestions.length; i++) {
+                const memorizedId = memorizedQuestions[i].id
+                if (memorizedId === id) {
+                    result = memorizedQuestions[i].answers
+                }
+            }
         }
     }
+
+
     return result
 }
 
@@ -302,14 +344,14 @@ const questions = {
 
         //envia a resposta ja validada pelo analyze question
         //console.log(getAnswersById(analyzeQuestion(hmmIRemember, userInput)))
-        return getAnswersById(analyzeQuestion(hmmIRemember, userInput)) 
+        return getAnswersById(analyzeQuestion(hmmIRemember, userInput))
     }
 
 
 
 
 
-   
+
 
 }
 

@@ -21,7 +21,6 @@ class MessageParser {
       this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
     } else if (config.step === "form_init") {
 
-      
       this.actionProvider.sendAnswer(questions.compare(message.normalize("NFD")))
 
     }

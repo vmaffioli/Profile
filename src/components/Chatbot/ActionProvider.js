@@ -18,16 +18,33 @@ class ActionProvider {
     const message = []
     let receivedCode_all = false
 
-    if (answersList[0] === "%%all%%") {//temporario so para  reto o 'que o bot consegue responder'
+    console.log(answersList)
+
+
+
+    if (answersList[0] === "%%all%%") {//temporario so para  retorno do 'que o bot consegue responder'
       answersList = []
+
+      
       for (let i = 0; i < memorizedQuestions.length; i++) {
         const questionDesc = memorizedQuestions[i].desc
-        if (questionDesc.length > 0) {
+
+        if (i === 0) {
+          //answersList.push(messages.all)
+          answersList.push("Perguntas ou assuntos que eu sei responder:")
+
+        } else if ((i > 0) || (questionDesc.length > 0)) {
           answersList.push(questionDesc)
         }
       }
-      receivedCode_all = true
+      receivedCode_all = true //arrumar
+
+    } else if (answersList[0] === "%%dontknow%%") {
+      answersList = ["Não entendi muito bem."]
+
+
     }
+
     for (let i = 0; i < answersList.length; i++) { //separa as respostas
       const answer = answersList[i]
       let delayValue = 1000 //  tempo inicial do delay

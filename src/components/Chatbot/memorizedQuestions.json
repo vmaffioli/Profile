@@ -8,17 +8,20 @@
     },
     {
         "id": "memorizedQuestions",
-        "desc": "O que eu sei responder",
+        "desc": "Perguntas ou assuntos que eu sei responder",
         "keys": [
             [
                 "voce",
                 "consegue",
-                "sabe"
+                "sabe",
+                "pode"
             ],
             [
                 "perguntas",
                 "responder",
-                "perguntar"
+                "perguntar",
+                "respostas",
+                "pergunto"
             ]
         ],
         "questions": [
@@ -34,9 +37,7 @@
             "quais as perguntas que voce consegue responder"
         ],
         "answers": [
-            "%%all%%",
             "%%all%%"
-
         ] 
     },
     {
@@ -44,9 +45,10 @@
         "desc": "Sobre mim, um resumo do Vinícius",
         "keys": [
             [
-                "sobre",
+                "saber",
                 "fale",
-                "saber"
+                "conte",
+                "sobre"
             ],
             [
                 "voce",
@@ -242,12 +244,13 @@
                 "proxima",
                 "perto",
                 "proximo",
-                "voce"
+                "voce",
+                "sua"
             ],
             [
                 "estaçao",
-                "localiza",
-                " mora ",
+                "localizaçao",
+                "mora",
                 "reside"
             ]
         ],
@@ -275,13 +278,17 @@
             "onde voce e residente",
             "aonde voce mora",
             "qual sua localizaçao",
-            "onde voce esta localizado"
-
+            "onde voce esta localizado",
+            "gostaria de saber sua localizaçao",
+            "gostaria de saber onde voce mora",
+            "sua localizaçao",
+            "onde voce esta localizado",
+            "aonde voce esta localizado"
 
         ],
         "answers": [
-            "Moro em Osasco, São Paulo.",
-            "Estou próximo das estações Quitaúna e Comandante Sampaio da linha Diamante da CPTM.",
+            "Moro em Osasco, São Paulo",
+            "Estou próximo das estações Quitaúna e Comandante Sampaio da linha Diamante da CPTM",
             "Até a Barra Funda por exemplo levo em torno de 25 minutos contando com o percurso até a estação."
         ]
     },
@@ -334,20 +341,10 @@
                 "habilidades",
                 "skills"     
             ],
-            [
-                "fale",
-                "conte",
-                "saber",
-                "hard",
-                "tecnicas"
-
-            ],
             [         
                 "suas",
-                "sobre",
-                "soft",
-                "sociais"
-
+                "sobre"
+ 
             ]
         ],
         "questions": [
