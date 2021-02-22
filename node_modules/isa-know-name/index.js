@@ -68,6 +68,7 @@ exports.filter = function(nameEntry){
                     };
                 });
             };
+            resultList = resultList[0]
         } else {
             nameList.forEach(name => {
                 if (name.toLowerCase() == nameEntry.toLowerCase()) {
