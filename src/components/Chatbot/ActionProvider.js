@@ -47,7 +47,7 @@ class ActionProvider {
         }
       } else {
         if (i > 0) {
-          delayValue = delayValue + (i * 3500) //tempo acumulado do delay
+          delayValue = delayValue + (i * 3000) //tempo acumulado do delay
         }
       }
 
