@@ -1,5 +1,6 @@
 import memory from "./memory.json";
 import sameWords from "./sameWords.json";
+import database from "./memorize";
 
 
 
@@ -66,7 +67,7 @@ function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior con
     let memoryCache // para futuras implementacoes tb 
     let moreLikely
 
-    if(array.length===0){
+    if (array.length === 0) {
         moreLikely = ["%%dontknow%%"]
     } else {
         for (let i = 0; i < array.length; i++) { //filtra os contadores
@@ -82,7 +83,7 @@ function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior con
             }
         } //para proximas ideias no reconhecimento
         //console.log(memoryCache)
-    
+
         moreLikely = [memoryCache[0]] // filtra cache com o maior(ou maiores iguais) contador(res)  -- add validacao
         for (let i = 1; i < memoryCache.length; i++) {
             if (getCounter(memoryCache[i]) === getCounter(moreLikely[0])) {
@@ -96,7 +97,7 @@ function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior con
 
 function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e final/ compara as palavras do input com as questoes memorizadas
     let partialAnalysis = [] //analise parcial
-    if(hmmIRemember[0]==="%%dontknow%%"){ // converte o nao reconhecido em nao lembrado rs
+    if (hmmIRemember[0] === "%%dontknow%%") { // converte o nao reconhecido em nao lembrado rs
         partialAnalysis.push(hmmIRemember)
     }
     hmmIRemember.forEach(itemRemembered => { //verifica tudo q ele lembrou ao ler o que o usuario perguntou
@@ -138,14 +139,14 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
         //finalAnalisys.push("%%draw%%") //seta aqui o prefixo para responder empate
 
         for (let i = 0; i < partialAnalysis.length; i++) {
-            if(i===0){
+            if (i === 0) {
                 cache.push(partialAnalysis[i])
             } else {
                 if (partialAnalysis[i][1] > cache[0][1]) {
                     finalAnalisys = partialAnalysis[i][0]
                 } else if (partialAnalysis[i][1] === cache[0][1]) {
                     finalAnalisys.push("%%draw%%")
-                    for(let ii=0;ii<partialAnalysis.length;ii++){
+                    for (let ii = 0; ii < partialAnalysis.length; ii++) {
                         finalAnalisys.push(partialAnalysis[i][0])
                     }
                 }
@@ -207,7 +208,7 @@ function analyzeKeys(recognizingSomething) { //analisa lista de keys reconhecida
     return thingsList
 }
 
-function getAnswersById(id) { // retorna respostas do json pelo id da pergunta
+function getAnswersById(id, userInput) { // retorna respostas do json pelo id da pergunta
     let result = []
 
     if (Array.isArray(id)) { // em caso de empate ele recebe mais de 1 lista, entao ele processa a resposta para empate aqui
@@ -228,6 +229,15 @@ function getAnswersById(id) { // retorna respostas do json pelo id da pergunta
             }
         }
     } else if (id === "%%dontknow%%") { // se nao reconhecer nenhuma chave, nada!
+        
+        database.ref('withoutAnswers') //salva no banco de dados a pergunta desconhecida
+            .once('value').then(async function (snap) {
+                database.ref(`withoutAnswers/${Date.now()}`)
+                    .set({
+                        pergunta: `${userInput}`,
+                    })
+            })
+
         result.push("Essa pergunta eu não conheço =(")
         result.push("Vou anotar e pedir pro Vinícius original me ensinar a responder")
 
@@ -300,8 +310,11 @@ const analyzeToAnswer = {
         //const keyCompareCache = myBrainIsArching[1]//para futuras atualizacoes
         const hmmIRemember = myBrainIsArching[0]
 
+
+
+
         //envia a resposta ja validada pelo analyzeQuestion
-        return getAnswersById(analyzeQuestion(hmmIRemember, userInput))
+        return getAnswersById(analyzeQuestion(hmmIRemember, userInput), userInput.trim()) //gambiarra para armazenar perguntas desconhecidas --arrumar depois
     }
 
 }

@@ -69,6 +69,7 @@ class ActionProvider {
 
   presentation = (resultIsa, name) => {
     if (resultIsa) {
+
       message = [
         this.createChatBotMessage(messages.askName_finish(name)),
         this.createChatBotMessage(messages.presentation_finish(name), { delay: 500 })
