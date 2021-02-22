@@ -102,7 +102,10 @@
             "qual a sua pretensao salarial receber pagamento",
             "qual sua expectativa de salario",
             "gostaria de saber sua expectativa de salario",
-            "me informe sua expectativa de salario"
+            "me informe sua expectativa de salario",
+            "pretensao salarial",
+            "sua pretensão salarial",
+            "qual e a sua pretensao salarial"
         ],
         "answers": [
             "Minha pretensão é de 2500",
@@ -159,8 +162,17 @@
         "id": "cincoAnos",
         "desc": "Como eu me vejo daqui a cinco anos",
         "keys": [
-            "cinco",
-            "anos"
+            [
+                "cinco",
+                "futuro",
+                "futuras",
+                "futuros"
+            ],
+            [
+                "anos",
+                "ve",
+                "metas"
+            ]
         ],
         "questions": [
             "onde voce se ve daqui cinco anos",
@@ -369,7 +381,6 @@
             [
                 "tempo",
                 "suas"
-                
             ],
             [
                 "programaçao",

@@ -8,14 +8,32 @@ function preventStutter(word) { //pra evitar que os proximos resultados nao saim
     return " " + word + " "
 }
 
+
+function normalizeCustom(str){
+    let mapaAcentosHex = {
+        a: /[\xE0-\xE6]/g,
+        e: /[\xE8-\xEB]/g,
+        i: /[\xEC-\xEF]/g,
+        o: /[\xF2-\xF6]/g,
+        u: /[\xF9-\xFC]/g,
+        c: /\xE7/g,
+        n: /\xF1/g
+    };
+    for (let letra in mapaAcentosHex) { //retira acentos
+        let expressaoRegular = mapaAcentosHex[letra]
+        str = str.replace(expressaoRegular, letra)
+    }
+    return str
+}
 function padronizeWords(userInput) {     // girias ou variacoes 
     let sameWords_in = sameWords[0]
     let sameWords_out = sameWords[1]
 
     for (let i = 0; i < sameWords_in.length; i++) {
-        userInput = preventStutter(userInput).replace(preventStutter(sameWords_in[i]), preventStutter(sameWords_out[i]))
+        userInput = normalizeCustom(preventStutter(userInput).replace(preventStutter(sameWords_in[i]), preventStutter(sameWords_out[i])))
     } //converte palavras com significados iguais aos memorizados
 
+ 
     return userInput //entrega com as palavras com significados iguais convertidas para palavra padrao
 }
 
@@ -280,10 +298,9 @@ const analyzeToAnswer = {
             let passedCounter = 0
             let twoFactory_1 = false //validar as 2 keys
             let twoFactory_2 = false
-
-            if (typeof (keys) === "object") { // precisa receber uma lista - é regra
+            if (Array.isArray(keys)) { // precisa receber uma lista - é regra
                 for (let i = 0; i < keys.length; i++) { //compara palavras vindas do usuarios com as keys
-                    if (typeof (keys[i]) === "object") {
+                    if (Array.isArray(keys[i])) {
                         let checkKeys = keys[i]
                         for (let ii = 0; ii < checkKeys.length; ii++) {
                             if ((passedCounter === 0) && (compareWords(userInput, checkKeys[ii]))) {
@@ -303,6 +320,7 @@ const analyzeToAnswer = {
                             console.log("Receiving an invalid keys list!")
                         }
                     }
+
                     if ((twoFactory_1) && (twoFactory_2)) {
                         recognizingSomething.push(memorizedQuestion.id)
                     }
