@@ -1,4 +1,4 @@
-import memorizedQuestions from "./memorizedQuestions.json";
+import memory from "./memory.json";
 import sameWords from "./sameWords.json";
 
 
@@ -63,7 +63,7 @@ function getCounter(str) { //add validacao
 }
 
 function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior contador informado pela AnalyzeKeys (independente de quantas keys forem)
-    let memoryCache
+    let memoryCache // para futuras implementacoes tb 
     let moreLikely
 
     if(array.length===0){
@@ -100,7 +100,7 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
         partialAnalysis.push(hmmIRemember)
     }
     hmmIRemember.forEach(itemRemembered => { //verifica tudo q ele lembrou ao ler o que o usuario perguntou
-        rememberQuestions(memorizedQuestions).forEach(obj => { //carrega cada objetos do json
+        rememberQuestions(memory).forEach(obj => { //carrega cada objetos do json
             if (obj.id === itemRemembered) { //compara cada palavra do input com da pergunta gravada na memoria
                 let memorizedQuestion = obj.questions
                 let resultList = []
@@ -118,7 +118,8 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
                             }
                         }
                     }
-                    resultList.push(counterEqualWords)
+                    let percentualResult = Math.floor(counterEqualWords / splitedMemQuestion.length * 100)
+                    resultList.push(percentualResult)
                 }
                 let result = resultList[0] //add validacao
                 for (let ii = 0; ii < resultList.length; ii++) { //filtra o maior contador
@@ -130,20 +131,26 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
             }
         })
     })
-
     let finalAnalisys // analise final
+    let cache = []
 
-    if (partialAnalysis.length > 1) { //confere se apos analisar a questao, ainda existe um empate
-        finalAnalisys = []
-        finalAnalisys.push("%%draw%%") //seta aqui o prefixo para responder empate
-
+    if (partialAnalysis.length > 1) { //confere se apos analisar a questao se ainda existe um empate
+        //finalAnalisys.push("%%draw%%") //seta aqui o prefixo para responder empate
 
         for (let i = 0; i < partialAnalysis.length; i++) {
-            if (i === 0) {
-                finalAnalisys.push(partialAnalysis[i][0])
-            } else if ((i > 0) || (partialAnalysis[i][1] === finalAnalisys[i - 1][0])) {
-                finalAnalisys.push(partialAnalysis[i][0])
+            if(i===0){
+                cache.push(partialAnalysis[i])
+            } else {
+                if (partialAnalysis[i][1] > cache[0][1]) {
+                    finalAnalisys = partialAnalysis[i][0]
+                } else if (partialAnalysis[i][1] === cache[0][1]) {
+                    finalAnalisys.push("%%draw%%")
+                    for(let ii=0;ii<partialAnalysis.length;ii++){
+                        finalAnalisys.push(partialAnalysis[i][0])
+                    }
+                }
             }
+
         }
 
     } else {
@@ -153,7 +160,7 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
     return finalAnalisys
 }
 
-function analyzeKeys(recognizingSomething) { //analisa lista de keys reconhecidas
+function analyzeKeys(recognizingSomething) { //analisa lista de keys reconhecidas - para futuras implementações
     let thingsList = []
     let alreadyRecognized = false
 
@@ -206,15 +213,15 @@ function getAnswersById(id) { // retorna respostas do json pelo id da pergunta
     if (Array.isArray(id)) { // em caso de empate ele recebe mais de 1 lista, entao ele processa a resposta para empate aqui
         for (let i = 0; i < id.length; i++) {
             const eachId = id[i]
-            for (let ii = 0; ii < memorizedQuestions.length; ii++) {
-                const memorizedId = memorizedQuestions[ii].id
+            for (let ii = 0; ii < memory.length; ii++) {
+                const memorizedId = memory[ii].id
                 if (result[0] === undefined) {
                     result.push("Eu não entendi muito bem a sua pergunta")
                     result.push("Você quis dizer alguns dos temas abaixo?")
                 } else if ((result[0] !== undefined) && (memorizedId === eachId)) {
-                    result.push(memorizedQuestions[ii].desc)
+                    result.push(memory[ii].desc)
                 }
-                if (ii === memorizedQuestions) {
+                if (ii === memory) {
                     result.push("Caso seja algum desses, me diga qual")
                     result.push("Se não for, tente refazer a pergunta usando outras palavras")
                 }
@@ -225,10 +232,10 @@ function getAnswersById(id) { // retorna respostas do json pelo id da pergunta
         result.push("Vou anotar e pedir pro Vinícius original me ensinar a responder")
 
     } else { //se souber e for somente 1 item,  caso limpo
-        for (let i = 0; i < memorizedQuestions.length; i++) {
-            const memorizedId = memorizedQuestions[i].id
+        for (let i = 0; i < memory.length; i++) {
+            const memorizedId = memory[i].id
             if (memorizedId === id) {
-                result = memorizedQuestions[i].answers
+                result = memory[i].answers
             }
         }
     }
@@ -251,7 +258,7 @@ const analyzeToAnswer = {
         let recognizingSomething = []
         userInput = padronizeWords(userInput) // aplica padrao para palavras com msm significado
 
-        rememberQuestions(memorizedQuestions).forEach(memorizedQuestion => { //verifica se cada key existe no userInput
+        rememberQuestions(memory).forEach(memorizedQuestion => { //verifica se cada key existe no userInput
             let keys = memorizedQuestion.keys
             let passedCounter = 0
             let twoFactory_1 = false //validar as 2 keys

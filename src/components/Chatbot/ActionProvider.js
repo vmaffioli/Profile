@@ -1,7 +1,7 @@
 // ActionProvider starter code
 import config from './config';
 import messages from './core/messages';
-import memorizedQuestions from './core/memorizedQuestions.json';
+import memory from './core/memory.json';
 
 
 let message;
@@ -22,8 +22,8 @@ class ActionProvider {
     if (answersList[0] === "%%all%%") {//temporario so para  retorno do 'que o bot consegue responder'
       answersList = []
 
-      for (let i = 0; i < memorizedQuestions.length; i++) {
-        const questionDesc = memorizedQuestions[i].desc
+      for (let i = 0; i < memory.length; i++) {
+        const questionDesc = memory[i].desc
 
         if (i === 0) {
           //answersList.push(messages.all)

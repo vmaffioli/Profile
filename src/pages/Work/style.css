@@ -132,8 +132,8 @@
     }
     .chat-container {
       position: absolute;
-      bottom: -72vh;
-      left: 12vw;
+      top: 95vh;
+      left: 10.5vw;
       height: 501px;
       width: 275px;
       justify-content: center;
@@ -142,26 +142,21 @@
 
     .btn-chat {
       position: relative;
-      top: 150vh;
+      top: 156vh;
       left: 0;
 
       width: 90vw;
       
     }
-    .chat-container{
-      width: 275px;
-    }
-
-    
-    
+   
    
     
     
     .btn-chat_out {
-      position: relative;
-      top: 8vh;
-      left: 30vw;
-    
+      position: inherit;
+      top: 0vh;
+      left: 60vw;
+      z-index: 1000;
 
 
       
