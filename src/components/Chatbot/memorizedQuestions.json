@@ -251,7 +251,8 @@
                 "estaçao",
                 "localizaçao",
                 "mora",
-                "reside"
+                "reside",
+                "onde"
             ]
         ],
         "questions": [
@@ -296,10 +297,6 @@
         "id": "pontoForteFraco",
         "desc": "Sobre meus pontos forte e fraco",
         "keys": [
-            [
-                "pontos",
-                "ponto"
-            ],
             "fraco",
             "forte"
         ],
@@ -336,7 +333,6 @@
         "id": "habilTecSoc",
         "desc": "Minhas habilidades técnicas e sociais (soft e hard skills)",
         "keys": [
-            "habilidades",
             [
                 "habilidades",
                 "skills"     
@@ -344,7 +340,6 @@
             [         
                 "suas",
                 "sobre"
- 
             ]
         ],
         "questions": [
@@ -387,7 +382,6 @@
                 "desenvolve",
                 "experiencia",
                 "programa"
-
             ]
         ],
         "questions": [

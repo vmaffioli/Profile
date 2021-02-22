@@ -18,14 +18,10 @@ class ActionProvider {
     const message = []
     let receivedCode_all = false
 
-    console.log(answersList)
-
-
 
     if (answersList[0] === "%%all%%") {//temporario so para  retorno do 'que o bot consegue responder'
       answersList = []
 
-      
       for (let i = 0; i < memorizedQuestions.length; i++) {
         const questionDesc = memorizedQuestions[i].desc
 
@@ -39,11 +35,7 @@ class ActionProvider {
       }
       receivedCode_all = true //arrumar
 
-    } else if (answersList[0] === "%%dontknow%%") {
-      answersList = ["Não entendi muito bem."]
-
-
-    }
+    } 
 
     for (let i = 0; i < answersList.length; i++) { //separa as respostas
       const answer = answersList[i]
