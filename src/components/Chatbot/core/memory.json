@@ -89,11 +89,14 @@
             [
                 "pretensao",
                 "expectativa"
+                
             ],
             [
                 "salarial",
                 "salario",
-                "remuneraçao"
+                "remuneraçao",
+                "qual",
+                "sua"
             ]
         ],
         "questions": [
