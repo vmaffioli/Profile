@@ -26,6 +26,7 @@ function normalizeCustom(str){
     return str
 }
 function padronizeWords(userInput) {     // girias ou variacoes 
+    userInput = userInput.toLowerCase()
     let sameWords_in = sameWords[0]
     let sameWords_out = sameWords[1]
 
@@ -115,6 +116,8 @@ function thinkingAboutKeys(array) { // filtra chaves reconhecidas pelo maior con
 
 function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e final/ compara as palavras do input com as questoes memorizadas
     let partialAnalysis = [] //analise parcial
+    userInput = padronizeWords(userInput.toLowerCase())
+    console.log(userInput)
     if (hmmIRemember[0] === "%%dontknow%%") { // converte o nao reconhecido em nao lembrado rs
         partialAnalysis.push(hmmIRemember)
     }

@@ -25,7 +25,7 @@ class MessageParser {
                   filtrado: `${isaName.filter(message)}`
               })
       })
-      this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
+        this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
 
     } else if (config.step === "form_init") {
       this.actionProvider.sendAnswer(analyzeToAnswer.compare(message))

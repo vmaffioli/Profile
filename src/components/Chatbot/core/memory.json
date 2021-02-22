@@ -92,7 +92,8 @@
             ],
             [
                 "salarial",
-                "salario"
+                "salario",
+                "remuneraçao"
             ]
         ],
         "questions": [
@@ -105,7 +106,9 @@
             "me informe sua expectativa de salario",
             "pretensao salarial",
             "sua pretensão salarial",
-            "qual e a sua pretensao salarial"
+            "qual e a sua pretensao salarial",
+            "qual a sua remuneraçao",
+            "qual a sua expectativa de remuneraçao"
         ],
         "answers": [
             "Minha pretensão é de 2500",
@@ -579,5 +582,199 @@
             "Onde precisei reavaliar minha conduta e forma de analisar o meu trabalho",
             "São situações que inicialmente são desgastantes mas que ao final da experiência nos trazem muitos beneficios"
         ]
+    },
+    {
+        "id": "minhaFaculdade",
+        "desc": "Sobre Faculdade e Cursos",
+        "keys": [
+            [
+                "qual",
+                "sua",
+                "voce",
+                "seus",
+                "suas",
+                "quais"
+            ],
+            [
+                "faculdade",
+                "estudos",
+                "estudando",
+                "certificados",
+                "certificaçao",
+                "certificaçoes",
+                "estuda",
+                "universidade",
+                "curso",
+                "cursa"
+
+
+            ]
+        ],
+        "questions": [
+            "qual sua faculdade",
+            "qual e a sua faculdade",
+            "voce faz faculdade",
+            "voce estuda",
+            "o que voce estuda",
+            "qual faculdade voce faz",
+            "qual curso voce faz",
+            "voce ja fez algum curso",
+            "voce possui certificados",
+            "voce possui certificaçao",
+            "voce possui certificacoes",
+            "quais sao suas certificacoes",
+            "me fale sobre sua faculdade",
+            "me fale sobre suas certificaçoes",
+            "quais sao suas certificaçoes"
+
+
+
+
+        ],
+        "answers": [
+            "Estudo Sistemas da Informação",
+            "Além da faculdade me dedico bastante em estudar desenvolvimento, seja de forma independente ou por meio de cursos",
+            "Possuo certificações pela Alura em desenvolvimento web (html/js/css e java/jsf2",
+            "Cobol níveis I, II e III pela GrandePorte e certificações de outras escolas virtuais como Bradesco e Digital Innovation One",
+            "Meus certificados por enquanto ficam salvos na minha página do Linkedin (https://www.linkedin.com/in/vinicius-maffioli/)"
+
+        ]
+    },
+    {
+        "id": "meuPortfolio",
+        "desc": "Sobre Portfólio",
+        "keys": [
+            [
+                "qual",
+                "voce",
+                "seus",
+                "tem",
+                "manda",
+                "envia",
+                "ver"
+            ],
+            [
+                "portfolio",
+                "portfolios"
+            ]
+        ],
+        "questions": [
+            "qual o seu portfolio",
+            "qual e o seu portfolio",
+            "voce tem portfolio",
+            "me mostre seu portfolio",
+            "qual portfolio voce faz",
+            "me fale sobre seu portfolio",
+            "endereço do seu portfolio",
+            "link do seu portfolio",
+            "me envia seu portofio",
+            "me manda seu portfolio",
+            "posso ver seu portfolio",
+            "gostaria de ver seu portfolio"
+
+
+        ],
+        "answers": [
+            "Estou com meu portfolio em construção, no momento tenho como suporte esta página que voce está acessando",
+            "Meu github (https://github.com/vmaffioli)",
+            "E meu Linkedin (https://www.linkedin.com/in/vinicius-maffioli/)"
+        ]
+    },
+    {
+        "id": "meuCurriculo",
+        "desc": "Meu curriculo",
+        "keys": [
+            [
+                "qual",
+                "voce",
+                "seus",
+                "seu",
+                "tem",
+                "link",
+                "endereço",
+                "dar",
+                "enviar",
+                "manda",
+                "envia"
+                
+            ],
+            [
+                "curriculo",
+                "cv"
+            ]
+        ],
+        "questions": [
+            "qual o seu curriculo",
+            "qual e o seu curriculo",
+            "voce tem curriculo",
+            "me mostre seu curriculo",
+            "qual curriculo voce faz",
+            "me fale sobre seu curriculo",
+            "endereço do seu curriculo",
+            "link do seu curriculo",
+            "qual o seu cv",
+            "qual e o seu cv",
+            "voce tem cv",
+            "me mostre seu cv",
+            "me manda seu cv",
+            "me envia seu cv",
+            "me mostre seu curriculo",
+            "me manda seu curriculo",
+            "me envia seu curriculo",
+            "qual cv voce faz",
+            "me fale sobre seu cv",
+            "endereço do seu cv",
+            "link do seu cv",
+            "me da seu curriclo",
+            "voce poderia me dar o seu curriculo",
+            "voce poderia me enviar o seu curriculo",
+            "voce poderia me enviar o lindo doseu curriculo"
+
+
+        ],
+        "answers": [
+            "Link para meu curriculo :",
+            "https://drive.google.com/file/d/1aL-lAkKvShIBoPee9KPRDEjTptzYX8UO/view?usp=sharing"
+        ]
+        
+    },
+    {
+        "id": "horaLazer",
+        "desc": "O que eu faço nas horas livres",
+        "keys": [
+            [
+                "horas",
+                "hora",
+                "hobbie",
+                "lazer",
+                "livres",
+                "livre",
+                "tempo",
+                "divertir"
+
+            ],
+            [
+                "voce",
+                "faz",
+                "qual",
+                "quais"
+            ]
+        ],
+        "questions": [
+            "o que voce faz nas horas livres",
+            "o que voce faz nas suas horas livres",
+            "o que voce faz no tempo livre",
+            "qual seu hobbie",
+            "quais sao os seus hobbies",
+            "qual e o seu hobbie",
+            "o que voce faz no seu lazer",
+            "o que voce faz para se divertir"
+
+        ],
+        "answers": [
+            "No meu tempo livre, quando não estou estudando e nem trabalhando estou com minha familia",
+            "Possuo uma filha de 3 anos, ela é meu maior hobbie"
+        ]
+        
     }
 ]
