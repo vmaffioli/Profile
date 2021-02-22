@@ -39,7 +39,7 @@
         ],
         "answers": [
             "%%all%%"
-        ] 
+        ]
     },
     {
         "id": "whoAmI",
@@ -75,13 +75,12 @@
             "me conte de voce",
             "me fale do vinicius",
             "me conte do vinicius"
-
         ],
         "answers": [
             "Me chamo Vinícius, tenho 27 anos e possuo 2 anos de experiência com programação em geral.",
             "Desses 2 anos, tenho como experiência profissional 1 ano de estágio em desenvolvimento Java/Sql pela BRQ.",
             "Amo programar, sou autodidata e possuo um plano de estudos diário, onde atualmente me dedico aos derivados de JAVA e JavaScript."
-        ] 
+        ]
     },
     {
         "id": "pretensaoSalarial",
@@ -109,12 +108,11 @@
             "Minha pretensão é de 2500",
             "Porém estou totalmente aberto a negociações."
         ]
-
     },
     {
         "id": "pontoForte",
         "desc": "Sobre meu ponto forte",
-        "keys":  [
+        "keys": [
             "ponto",
             "forte"
         ],
@@ -132,7 +130,6 @@
         "answers": [
             "Minha persistência, não desisto de resolver ou enfrentar situações desafiadoras",
             "Seja um bug, algum aprendizado complexo ou situação que exijam mudanças repentinas."
-
         ]
     },
     {
@@ -161,7 +158,7 @@
     {
         "id": "cincoAnos",
         "desc": "Como eu me vejo daqui a cinco anos",
-        "keys":  [
+        "keys": [
             "cinco",
             "anos"
         ],
@@ -229,7 +226,6 @@
             "quais suas habilidades sociais",
             "agora me fale sobre suas habilidades sociais",
             "e suas habilidades sociais"
-
         ],
         "answers": [
             "Com frequência exerço habilidades comunicativas, de positividade e enfrentamento.",
@@ -286,7 +282,6 @@
             "sua localizaçao",
             "onde voce esta localizado",
             "aonde voce esta localizado"
-
         ],
         "answers": [
             "Moro em Osasco, São Paulo",
@@ -294,7 +289,7 @@
             "Até a Barra Funda por exemplo levo em torno de 25 minutos contando com o percurso até a estação."
         ]
     },
-        {
+    {
         "id": "pontoForteFraco",
         "desc": "Sobre meus pontos forte e fraco",
         "keys": [
@@ -318,8 +313,6 @@
             "e o seu ponto forte e fraco",
             "agora seu ponto forte e fraco",
             "agora seus ponto forte e fraco"
-
-
         ],
         "answers": [
             "Bom, meu ponto forte é:",
@@ -336,9 +329,9 @@
         "keys": [
             [
                 "habilidades",
-                "skills"     
+                "skills"
             ],
-            [         
+            [
                 "suas",
                 "sobre"
             ]
@@ -356,9 +349,8 @@
             "quais suas habilidades",
             "agora me fale sobre suas habilidades",
             "e suas habilidades"
-
         ],
-        "answers":[
+        "answers": [
             "Vou dividir em duas seções, sendo a primeira sobre minhas habilidades técnicas/hard skills:",
             "Minhas principais habilidades são desenvolvimento back-end Java e Nodejs",
             "Fiz estágio em desenvolvimento de sistemas e participei de projetos bacanas em Java/SQL que me deram boa noções iniciais em projetos grandes",
@@ -368,20 +360,24 @@
             "Com frequência exerço habilidades comunicativas, de positividade e enfrentamento.",
             "Gosto de trocar conhecimento, seja em conversas casuais ou buscando soluções ",
             "Procuro utilizar da boa apresentação e otimismo como posicionamento inicial para ideias ou participações."
-        ]    
-
+        ]
     },
     {
         "id": "tempoProgramador",
         "desc": "Meu tempo de experiência e contato com desenvolvimento web",
         "keys": [
-            "tempo",
+            [
+                "tempo",
+                "suas"
+                
+            ],
             [
                 "programaçao",
                 "programador",
                 "desenvolvimento",
                 "desenvolve",
                 "experiencia",
+                "experiencias",
                 "programa"
             ]
         ],
@@ -404,7 +400,6 @@
             "No meu primeiro ano (durante meu estágio) eu já realizava cruds, montava ambientes com eclipse e websphere, usava versionamento GIT e criava procedures e massa de dados (mySQL)",
             "Após esse periodo passei mais 1 ano estudando desenvolvimento web com Node e React.js, além de estudar bancos de dados noSQL, como Firebase Real Time Database.",
             "No meu repositório pessoal no GitHub é possivel observar que me aventurei academicamente em projetos para bots (discord.js e chatbots em React) github/vmaffioli"
-
         ]
     },
     {
@@ -426,8 +421,6 @@
             "e seu signo",
             "gostaria de saber qual e o seu signo",
             "gostaria de saber o seu signo"
-
-
         ],
         "answers": [
             "Meu signo é Touro com ascendente em Libra e lua em Câncer :)"
@@ -450,7 +443,6 @@
                 "estudar",
                 "motivo",
                 "motiva"
-
             ]
         ],
         "questions": [
@@ -494,7 +486,8 @@
         ],
         "answers": [
             "Desde muito novo tenho contato com computadores, sempre fui muito curioso e no passado tive algumas experiências pessoais com envolvendo motor Elysium e scripts Perl",
-            "Quando minha filha nasceu, resolvi resgatar essa experiência e comecei a estudar Sistemas da informação ","Amo programar, sou autodidata e possuo um plano de estudos diário, onde atualmente me dedico aos derivados de JAVA e JavaScript.",
+            "Quando minha filha nasceu, resolvi resgatar essa experiência e comecei a estudar Sistemas da informação ",
+            "Amo programar, sou autodidata e possuo um plano de estudos diário, onde atualmente me dedico aos derivados de JAVA e JavaScript.",
             "Um tempo depois eu consegui minha oportunidade de estágio e pude começar a usar essa habilidade para o mercado profissional, foi amor a primeira vista com Java e Nodejs",
             "Sigo desde então aprendendo e aprimorando minhas skills"
         ]
@@ -545,7 +538,6 @@
             "Pude estar presente na execução e entrega de dois projetos (back end java)",
             "Além de criar diversos scripts com vbs e hta pra galera! haha",
             "Resumindo: realização para mim é superar expectativas, se fazer presente e oferendo soluções"
-
         ]
     },
     {
@@ -561,7 +553,6 @@
                 "dificil",
                 "desafio",
                 "situaçao"
-
             ]
         ],
         "questions": [
@@ -577,5 +568,4 @@
             "São situações que inicialmente são desgastantes mas que ao final da experiência nos trazem muitos beneficios"
         ]
     }
-
 ]
