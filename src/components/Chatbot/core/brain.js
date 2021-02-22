@@ -248,6 +248,13 @@ function getAnswersById(id, userInput) { // retorna respostas do json pelo id da
                 result = memory[i].answers
             }
         }
+        database.ref('withAnswers') //salva no banco de dados a pergunta desconhecida
+        .once('value').then(async function (snap) {
+            database.ref(`withAnswers/${Date.now()}`)
+                .set({
+                    pergunta: `${userInput}`,
+                })
+        })
     }
 
 
