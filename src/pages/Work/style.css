@@ -7,9 +7,9 @@
 
 .chat-container {
   position: absolute;
-  right: 15vw;
+  left: 56vw;
   bottom: 9vh;
-  width: 275px;
+  width: 125px;
 
 
  
@@ -45,12 +45,13 @@
 
 .btn-chat_out {
   position: absolute;
-  top: 40vh;
-  right: -18vh;
+  top: 0;
+  left: 35vw;
 
-  width: 100px;
-  height: 40px;
+  width: 45px;
+  height: 25px;
 
+  color: var(--red);
   background-color: lightgray;
   padding: 5px 5px 5px 5px;
   border: none;
@@ -63,6 +64,8 @@
 .btn-chat_out:hover {
   letter-spacing: 0.2em;
   background-color: var(--red);
+  color: white;
+
   
 
 
@@ -143,11 +146,12 @@
       left: 0;
 
       width: 90vw;
-   
-    
-    
       
     }
+    .chat-container{
+      width: 275px;
+    }
+
     
     
    

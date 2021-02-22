@@ -1,7 +1,7 @@
 // ActionProvider starter code
 import config from './config';
-import messages from './messages';
-import memorizedQuestions from './memorizedQuestions.json';
+import messages from './core/messages';
+import memorizedQuestions from './core/memorizedQuestions.json';
 
 
 let message;

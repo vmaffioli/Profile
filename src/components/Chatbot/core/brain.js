@@ -1,4 +1,5 @@
 import memorizedQuestions from "./memorizedQuestions.json";
+import sameWords from "./sameWords.json";
 
 
 
@@ -6,57 +7,10 @@ function preventStutter(word) { //pra evitar que os proximos resultados nao saim
     return " " + word + " "
 }
 
-function sameWords(userInput) { //jsonificar isso aquiiiii
-    // girias ou variacoes 
-    let sameWords_in = [
-        "vc",
-        "tu",
-        "q",
-        "o q",
-        "oq",
-        "5",
-        "estacao",
-        "de trem",
-        "de metro",
-        "fracos",
-        "fortes",
-        "por que",
-        "pq",
-        "programacao",
-        "situacao",
-        "fala",
-        "conta",
-        "realizacoes",
-        "realizacao",
-        "conquistas",
-        "localizacao"
+function padronizeWords(userInput) {     // girias ou variacoes 
+    let sameWords_in = sameWords[0]
+    let sameWords_out = sameWords[1]
 
-    ]
-    let sameWords_out = [
-        "voce",
-        "voce",
-        "que",
-        "o que",
-        "o que",
-        "cinco",
-        "estaçao",
-        "",
-        "",
-        "fraco",
-        "forte",
-        "porque",
-        "porque",
-        "programaçao",
-        "situaçao",
-        "fale",
-        "conte",
-        "realizaçoes",
-        "realizaçao",
-        "conquista",
-        "localizaçao"
-
-
-    ]
     for (let i = 0; i < sameWords_in.length; i++) {
         userInput = preventStutter(userInput).replace(preventStutter(sameWords_in[i]), preventStutter(sameWords_out[i]))
     } //converte palavras com significados iguais aos memorizados
@@ -295,7 +249,7 @@ function compareWords(userInput, memorizedWord) { //compara palavras - so string
 const analyzeToAnswer = {
     compare: (userInput) => {
         let recognizingSomething = []
-        userInput = sameWords(userInput) // aplica padrao para palavras com msm significado
+        userInput = padronizeWords(userInput) // aplica padrao para palavras com msm significado
 
         rememberQuestions(memorizedQuestions).forEach(memorizedQuestion => { //verifica se cada key existe no userInput
             let keys = memorizedQuestion.keys

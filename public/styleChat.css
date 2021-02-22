@@ -1,0 +1,25 @@
+.react-chatbot-kit-chat-btn-send {
+    border-bottom-right-radius: 0;
+
+}
+
+@media(max-width: 450px) {
+    .react-chatbot-kit-chat-container {
+        width: 275px;
+    }
+
+    .react-chatbot-kit-chat-bot-message {
+        width: 184.5px;
+        margin-left: auto;
+    }
+
+    .react-chatbot-kit-user-chat-message {
+        width: 184.5px;
+        margin-left: auto;
+        text-align: right;
+
+    }
+
+
+
+}

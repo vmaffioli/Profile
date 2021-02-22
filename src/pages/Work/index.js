@@ -19,7 +19,7 @@ import config from "../../components/Chatbot/config";
 function Work() {
   const buttonIn = <button className="btn-chat_out" onClick={element => setWorkHistory({
     element: sendChatInfo
-  })}>VOLTAR</button>;
+  })}>x</button>;
 
   const buttonOut = <button className="btn-chat" onClick={element => setWorkHistory({
     element: sendChat
@@ -58,16 +58,10 @@ function Work() {
         <PrevPage />
       </Link>
 
-
-
-
-
       <div className="content-div">
         <div>{workHistory.element}</div>
 
       </div>
-
-
 
       <Exp />
 

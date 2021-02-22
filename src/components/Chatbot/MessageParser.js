@@ -1,6 +1,6 @@
 import isaName from 'isa-know-name';
 import config from './config';
-import analyzeToAnswer from './brain';
+import analyzeToAnswer from './core/brain';
 
 // MessageParser starter code
 

@@ -1,5 +1,5 @@
 import { createChatBotMessage } from "react-chatbot-kit";
-import messages from "./messages";
+import messages from "./core/messages";
 
 const botName = "Vinibot";
 
@@ -8,10 +8,6 @@ const config = {
     botName: botName,
     lang: "no",
     step: "presentation_init", //presentation_init form_init
-    ansCount: 0,
-    ansHist: [
-      "default"
-    ],
 
     customStyles: {
         botMessageBox: {
