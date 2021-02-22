@@ -292,7 +292,7 @@ function compareWords(userInput, memorizedWord) { //compara palavras - so string
     return result
 }
 
-const questions = {
+const analyzeToAnswer = {
     compare: (userInput) => {
         let recognizingSomething = []
         userInput = sameWords(userInput) // aplica padrao para palavras com msm significado
@@ -345,4 +345,4 @@ const questions = {
 
 }
 
-export default questions;
+export default analyzeToAnswer;

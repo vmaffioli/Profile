@@ -1,3 +1,4 @@
+//modelo com suporte de frases aleatorias dentro do contexto
 
 function randomize(array) {
     let rand = Math.floor(Math.random() * array.length);
