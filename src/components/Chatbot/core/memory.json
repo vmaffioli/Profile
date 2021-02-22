@@ -510,6 +510,46 @@
         ]
     },
     {
+        "id": "meuPortfolio",
+        "desc": "Sobre Portfólio",
+        "keys": [
+            [
+                "qual",
+                "voce",
+                "seus",
+                "tem",
+                "manda",
+                "envia",
+                "ver"
+            ],
+            [
+                "portfolio",
+                "portfolios"
+            ]
+        ],
+        "questions": [
+            "qual o seu portfolio",
+            "qual e o seu portfolio",
+            "voce tem portfolio",
+            "me mostre seu portfolio",
+            "qual portfolio voce faz",
+            "me fale sobre seu portfolio",
+            "endereço do seu portfolio",
+            "link do seu portfolio",
+            "me envia seu portofio",
+            "me manda seu portfolio",
+            "posso ver seu portfolio",
+            "gostaria de ver seu portfolio"
+
+
+        ],
+        "answers": [
+            "Estou com meu portfolio em construção, no momento tenho como suporte esta página que voce está acessando",
+            "Meu github (https://github.com/vmaffioli)",
+            "E meu Linkedin (https://www.linkedin.com/in/vinicius-maffioli/)"
+        ]
+    },
+    {
         "id": "minhasRealizaçoes",
         "desc": "Sobre alguma realização minha no trabalho",
         "keys": [
@@ -641,46 +681,6 @@
             "Cobol níveis I, II e III pela GrandePorte e certificações de outras escolas virtuais como Bradesco e Digital Innovation One",
             "Meus certificados por enquanto ficam salvos na minha página do Linkedin (https://www.linkedin.com/in/vinicius-maffioli/)"
 
-        ]
-    },
-    {
-        "id": "meuPortfolio",
-        "desc": "Sobre Portfólio",
-        "keys": [
-            [
-                "qual",
-                "voce",
-                "seus",
-                "tem",
-                "manda",
-                "envia",
-                "ver"
-            ],
-            [
-                "portfolio",
-                "portfolios"
-            ]
-        ],
-        "questions": [
-            "qual o seu portfolio",
-            "qual e o seu portfolio",
-            "voce tem portfolio",
-            "me mostre seu portfolio",
-            "qual portfolio voce faz",
-            "me fale sobre seu portfolio",
-            "endereço do seu portfolio",
-            "link do seu portfolio",
-            "me envia seu portofio",
-            "me manda seu portfolio",
-            "posso ver seu portfolio",
-            "gostaria de ver seu portfolio"
-
-
-        ],
-        "answers": [
-            "Estou com meu portfolio em construção, no momento tenho como suporte esta página que voce está acessando",
-            "Meu github (https://github.com/vmaffioli)",
-            "E meu Linkedin (https://www.linkedin.com/in/vinicius-maffioli/)"
         ]
     },
     {
