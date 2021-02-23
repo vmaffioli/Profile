@@ -779,5 +779,98 @@
             "Possuo uma filha de 3 anos, ela é meu maior hobbie"
         ]
         
+    },
+    {
+        "id": "meuNome",
+        "desc": "Meu nome",
+        "keys": [
+            [
+                "qual",
+                "seu",
+                "voce"
+            ],
+            [
+                "nome",
+                "chama"
+            ]
+        ],
+        "questions": [
+            "qual e o seu nome",
+            "qual o seu nome",
+            "como voce se chama",
+            "como e o seu nome",
+            "me fale seu nome"
+        ],
+        "answers": [
+            "Eu me chamo Vinícius de Mico Maffioli."
+        ]
+        
+    },
+    {
+        "id": "minhaIdade",
+        "desc": "Minha idade",
+        "keys": [
+            [
+                "qual",
+                "sua",
+                "tem"
+            ],
+            [
+                "idade",
+                "anos"
+            ]
+        ],
+        "questions": [
+            "qual e a sua idade ",
+            "quantos anos voce tem",
+            "quantos anos"
+        ],
+        "answers": [
+            "Eu tenho 27 anos, nasci em 1993."
+        ]
+        
+    },
+    {
+        "id": "ultimoEmprego",
+        "desc": "Minha ultima experiência profissional",
+        "keys": [
+            [
+                "qual",
+                "sua",
+                "ultima",
+                "seu",
+                "anterior",
+                "anteriormente"
+            ],
+            [
+                "experiencia",
+                "emprego",
+                "profissional",
+                "trabalho",
+                "trabalhou",
+                "trabalhava"
+            ]
+        ],
+        "questions": [
+            "qual sua ultima experiencia profissional",
+            "qual sua ultima experiencia de trabalho",
+            "qual seu ultimo trabalho",
+            "qual seu ultimo emprego",
+            "qual sua ultimoaexperiencia profissional",
+            "onde vc trabalhava",
+            "qual seu emprego anterior",
+            "qual seu trabalho anterior",
+            "qual sua experiencia profissional anterior",
+            "onde voce trabalhou antes",
+            "onde voce trabalhava"
+        ],
+        "answers": [
+            "Minha ultima experiência profissional foi com a BRQ, onde fiz estágio de desenvolvimento de sistemas durante 1 ano.",
+            "Com eles fiz minhas primeiras páginas, CRUDS e procedures.",
+            "Participei de dois projetos de criação de intranet para cliente bancário utilizando Java e SQL",
+            "Minhas principais atividades eram gerar massa de dados e criação de procedures mySQL e back end envolvendo retornos em tela (.pdf)"
+        
+        ]
+        
     }
 ]
