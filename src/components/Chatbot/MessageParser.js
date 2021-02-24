@@ -1,6 +1,6 @@
 import isaName from 'isa-know-name';
 import config from './config';
-import analyzeToAnswer from './core/brain';
+import analyzeInput from './core/brain';
 import memorize from "../Chatbot/core/memorize";
 
 // MessageParser starter code
@@ -27,7 +27,7 @@ class MessageParser {
         this.actionProvider.presentation(isaName.check(msg), isaName.filter(msg).toString());
 
     } else if (config.step === "form_init") {
-      this.actionProvider.sendAnswer(analyzeToAnswer(msg))
+      this.actionProvider.sendAnswer(analyzeInput.reply(msg))
 
     }
   }

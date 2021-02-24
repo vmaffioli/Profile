@@ -269,8 +269,6 @@ function getAnswersById(id, userInput) { // retorna respostas do json pelo id da
 
     }
 
-
-
     return result
 }
 
@@ -282,9 +280,9 @@ function compareWords(userInput, memorizedWord) { //compara palavras - so string
     return result
 }
 
-const analyzeToAnswer = {
+const analyzeInput = {
     
-    compare: (userInput) => {
+    reply: (userInput) => {
         let recognizingSomething = []
         userInput = padronizeWords(userInput) // aplica padrao para palavras com msm significado
 
@@ -339,4 +337,4 @@ const analyzeToAnswer = {
 
 }
 
-export default analyzeToAnswer;
+export default analyzeInput;
