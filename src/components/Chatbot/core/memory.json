@@ -14,7 +14,8 @@
                 "voce",
                 "consegue",
                 "sabe",
-                "pode"
+                "pode",
+                "sobre"
             ],
             [
                 "perguntas",
@@ -22,7 +23,9 @@
                 "perguntar",
                 "respostas",
                 "pergunto",
-                "assuntos"
+                "assuntos",
+                "falar",
+                "conversar"
             ]
         ],
         "questions": [
@@ -89,7 +92,6 @@
             [
                 "pretensao",
                 "expectativa"
-                
             ],
             [
                 "salarial",
@@ -122,8 +124,19 @@
         "id": "pontoForte",
         "desc": "Sobre meu ponto forte",
         "keys": [
-            "ponto",
-            "forte"
+            [
+                "ponto",
+                "pontos",
+                "sua",
+                "seu"
+            ],
+            [
+                "forte",
+                "positivo",
+                "positivos",
+                "qualidade",
+                "qualidades"
+            ]
         ],
         "questions": [
             "qual seu ponto forte",
@@ -134,7 +147,16 @@
             "qual caracteristica voce considera seu ponto forte",
             "me diz qual e o seu ponto forte",
             "e o seu ponto forte",
-            "agora seu ponto forte"
+            "agora seu ponto forte",
+            "qual seu ponto positivo",
+            "qual e o seu ponto positivo",
+            "qual voce considera seu ponto positivo",
+            "para voce, qual e o seu ponto positivo",
+            "gostaria de saber seu ponto positivo",
+            "qual caracteristica voce considera seu ponto positivo",
+            "me diz qual e o seu ponto positivo",
+            "e o seu ponto positivo",
+            "agora seu ponto positivo"
         ],
         "answers": [
             "Minha persistência, não desisto de resolver ou enfrentar situações desafiadoras",
@@ -145,8 +167,19 @@
         "id": "pontoFraco",
         "desc": "Sobre meu ponto fraco",
         "keys": [
-            "ponto",
-            "fraco"
+            [
+                "ponto",
+                "pontos",
+                "sua",
+                "seu"
+            ],
+            [
+                "forte",
+                "positivo",
+                "positivos",
+                "qualidade",
+                "qualidades"
+            ]
         ],
         "questions": [
             "qual seu ponto fraco",
@@ -157,7 +190,16 @@
             "qual caracteristica vocee considera seu ponto fraco",
             "me diz qual e o seu ponto fraco",
             "e o seu ponto fraco",
-            "agora o seu ponto fraco"
+            "agora o seu ponto fraco",
+            "qual seu ponto negativo",
+            "qual e o seu ponto negativo",
+            "qual voce considera seu ponto negativo",
+            "para voce, qual e o seu ponto negativo",
+            "gostaria de saber seu ponto negativo",
+            "qual caracteristica voce considera seu ponto negativo",
+            "me diz qual e o seu ponto negativo",
+            "e o seu ponto negativo",
+            "agora seu ponto negativo"
         ],
         "answers": [
             "Ansiedade",
@@ -540,8 +582,6 @@
             "me manda seu portfolio",
             "posso ver seu portfolio",
             "gostaria de ver seu portfolio"
-
-
         ],
         "answers": [
             "Estou com meu portfolio em construção, no momento tenho como suporte esta página que voce está acessando",
@@ -605,12 +645,16 @@
                 "qual",
                 "fale",
                 "conte",
-                "situaçao"
+                "situaçao",
+                "situaçoes"
             ],
             [
                 "dificil",
                 "desafio",
-                "situaçao"
+                "situaçao",
+                "dificeis",
+                "complicada",
+                "pressao"
             ]
         ],
         "questions": [
@@ -618,7 +662,17 @@
             "me fale sobre alguma situaçao dificil no trabalho",
             "gostaria de saber sobre algo dificil no trabalho",
             "gostaria de saber sobre alguma situaçao dificil no trabalho",
-            "me conte sobre alguma situaçao dificil no trabalho"
+            "me conte sobre alguma situaçao dificil no trabalho",
+            "me conte algumas situaçoes dificeis no trabalho",
+            "me fale sobre algumas situaçoes dificeis no trabalho",
+            "gostaria de saber sobre algo dificeis no trabalho",
+            "gostaria de saber sobre algumas situaçoes dificeis no trabalho",
+            "me conte sobre algumas situaçoes dificeis no trabalho",
+            "me conte algumas situaçoes complicada no trabalho",
+            "me fale sobre algumas situaçoes complicada no trabalho",
+            "gostaria de saber sobre algo complicada no trabalho",
+            "gostaria de saber sobre algumas situaçoes complicada no trabalho",
+            "me conte sobre algumas situaçoes complicada no trabalho"
         ],
         "answers": [
             "Já lidei com situações de extrema pressão",
@@ -649,8 +703,6 @@
                 "universidade",
                 "curso",
                 "cursa"
-
-
             ]
         ],
         "questions": [
@@ -669,10 +721,6 @@
             "me fale sobre sua faculdade",
             "me fale sobre suas certificaçoes",
             "quais sao suas certificaçoes"
-
-
-
-
         ],
         "answers": [
             "Estudo Sistemas da Informação",
@@ -680,7 +728,6 @@
             "Possuo certificações pela Alura em desenvolvimento web (html/js/css e java/jsf2",
             "Cobol níveis I, II e III pela GrandePorte e certificações de outras escolas virtuais como Bradesco e Digital Innovation One",
             "Meus certificados por enquanto ficam salvos na minha página do Linkedin (https://www.linkedin.com/in/vinicius-maffioli/)"
-
         ]
     },
     {
@@ -699,7 +746,6 @@
                 "enviar",
                 "manda",
                 "envia"
-                
             ],
             [
                 "curriculo",
@@ -732,14 +778,11 @@
             "voce poderia me dar o seu curriculo",
             "voce poderia me enviar o seu curriculo",
             "voce poderia me enviar o lindo doseu curriculo"
-
-
         ],
         "answers": [
             "Link para meu curriculo :",
             "https://drive.google.com/file/d/1aL-lAkKvShIBoPee9KPRDEjTptzYX8UO/view?usp=sharing"
         ]
-        
     },
     {
         "id": "horaLazer",
@@ -754,7 +797,6 @@
                 "livre",
                 "tempo",
                 "divertir"
-
             ],
             [
                 "voce",
@@ -772,13 +814,11 @@
             "qual e o seu hobbie",
             "o que voce faz no seu lazer",
             "o que voce faz para se divertir"
-
         ],
         "answers": [
             "No meu tempo livre, quando não estou estudando e nem trabalhando estou com minha familia",
             "Possuo uma filha de 3 anos, ela é meu maior hobbie"
         ]
-        
     },
     {
         "id": "meuNome",
@@ -804,7 +844,6 @@
         "answers": [
             "Eu me chamo Vinícius de Mico Maffioli."
         ]
-        
     },
     {
         "id": "minhaIdade",
@@ -828,7 +867,6 @@
         "answers": [
             "Eu tenho 27 anos, nasci em 1993."
         ]
-        
     },
     {
         "id": "ultimoEmprego",
@@ -869,8 +907,49 @@
             "Com eles fiz minhas primeiras páginas, CRUDS e procedures.",
             "Participei de dois projetos de criação de intranet para cliente bancário utilizando Java e SQL",
             "Minhas principais atividades eram gerar massa de dados e criação de procedures mySQL e back end envolvendo retornos em tela (.pdf)"
-        
         ]
-        
+    },
+    {
+        "id": "meuObjetivo",
+        "desc": "Meu objetivo profissional",
+        "keys": [
+            [
+                "qual",
+                "seu",
+                "conte",
+                "sobre",
+                "fale",
+                "seus",
+                "sao",
+                "quais"
+
+            ],
+            [
+                "objetivo",
+                "objetivos",
+                "planos"
+ 
+            ]
+        ],
+        "questions": [
+            "qual e o seu objetivo?",
+            "qual e o seu objetivo profissional?",
+            "qual seu objetivo profissional?",
+            "qual seu objetivo?",
+            "o que voce procura",
+            "me conte seu objetivo",
+            "me fale sobre seu objetivo",
+            "quais sao seus objetivos",
+            "quais sao os seus objetivos?",
+            "quais sao os seus objetivos profissionais?",
+            "quais sao os seus objetivos profissionais?",
+            "quais sao os seus objetivos?"
+        ],
+        "answers": [
+            "Minha ultima experiência profissional foi com a BRQ, onde fiz estágio de desenvolvimento de sistemas durante 1 ano.",
+            "Com eles fiz minhas primeiras páginas, CRUDS e procedures.",
+            "Participei de dois projetos de criação de intranet para cliente bancário utilizando Java e SQL",
+            "Minhas principais atividades eram gerar massa de dados e criação de procedures mySQL e back end envolvendo retornos em tela (.pdf)"
+        ]
     }
 ]

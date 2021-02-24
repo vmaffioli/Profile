@@ -1,19 +1,43 @@
-import Firebase from 'firebase';
+import database from '../../Firebase';
 
-var firebaseConfig = {
-    apiKey: process.env.APIKEY,
-    authDomain: process.env.AUTHDOMAIN,
-    databaseURL: "https://profile-chatbot-6a3b0-default-rtdb.firebaseio.com",
-    projectId: process.env.PROJECTID,
-    storageBucket: process.env.STORAGEBUCKET,
-    messagingSenderId: process.env.MESSAGINGSENDERID,
-    appId: process.env.APPID,
-};
+let id, date
 
-// Initialize Firebase
-Firebase.initializeApp(firebaseConfig);
+const memorize = {
 
-const database = Firebase.database();
+    initialize: (nmUser) => { //inicializa variaveis necessarias para o save
+        id = Date.now()
+
+        date = new Date()
+        id = id + "-" + nmUser
+    },
 
 
-export default database;
+    save: (msg, type) => { //recebe mensagem e tipo do objeto a ser salvo
+    
+    if (type === "answered") {
+            database.ref('conversations') //salva no banco de dados a pergunta desconhecida
+                .once('value').then(async function (snap) {
+                    database.ref(`answered/${id}`)
+                        .set({
+                            msg: `${msg}`,
+                            date: `${date}`
+                        })
+                })
+
+        } else if (type === "notAnswered") {
+
+            database.ref('conversations') //salva no banco de dados a pergunta desconhecida
+                .once('value').then(async function (snap) {
+                    database.ref(`notAnswered/${id}`)
+                        .set({
+                            msg: `${msg}`,
+                            date: `${date}`
+                        })
+                })
+        }
+    }
+}
+
+
+
+export default memorize;

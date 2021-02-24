@@ -1,6 +1,6 @@
 import memory from "./memory.json";
 import sameWords from "./sameWords.json";
-import database from "./memorize";
+import Memorize from "./memorize";
 
 
 
@@ -166,7 +166,7 @@ function analyzeQuestion(hmmIRemember, userInput) { //dividido em parcial e fina
                 if (partialAnalysis[i][1] > cache[0][1]) {
                     finalAnalisys = partialAnalysis[i][0]
                 } else if (partialAnalysis[i][1] === cache[0][1]) {
-                    finalAnalisys.push("%%draw%%")
+                    finalAnalisys = ["%%draw%%"]
                     for (let ii = 0; ii < partialAnalysis.length; ii++) {
                         finalAnalisys.push(partialAnalysis[i][0])
                     }
@@ -251,13 +251,8 @@ function getAnswersById(id, userInput) { // retorna respostas do json pelo id da
         }
     } else if (id === "%%dontknow%%") { // se nao reconhecer nenhuma chave, nada!
         
-        database.ref('withoutAnswers') //salva no banco de dados a pergunta desconhecida
-            .once('value').then(async function (snap) {
-                database.ref(`withoutAnswers/${Date.now()}`)
-                    .set({
-                        pergunta: `${userInput}`,
-                    })
-            })
+       //salva no banco de dados a pergunta desconhecida
+        Memorize.save(userInput,"notAnswered")
 
         result.push("Essa pergunta eu não conheço =(")
         result.push("Vou anotar e pedir pro Vinícius original me ensinar a responder")
@@ -269,13 +264,9 @@ function getAnswersById(id, userInput) { // retorna respostas do json pelo id da
                 result = memory[i].answers
             }
         }
-        database.ref('withAnswers') //salva no banco de dados a pergunta desconhecida
-        .once('value').then(async function (snap) {
-            database.ref(`withAnswers/${Date.now()}`)
-                .set({
-                    pergunta: `${userInput}`,
-                })
-        })
+       //salva o que consegue responder
+       Memorize.save(userInput,"answered")
+
     }
 
 
@@ -292,6 +283,7 @@ function compareWords(userInput, memorizedWord) { //compara palavras - so string
 }
 
 const analyzeToAnswer = {
+    
     compare: (userInput) => {
         let recognizingSomething = []
         userInput = padronizeWords(userInput) // aplica padrao para palavras com msm significado
