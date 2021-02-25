@@ -128,7 +128,9 @@
                 "ponto",
                 "pontos",
                 "sua",
-                "seu"
+                "seu",
+                "suas",
+                "sobre"
             ],
             [
                 "forte",
@@ -171,14 +173,16 @@
                 "ponto",
                 "pontos",
                 "sua",
-                "seu"
+                "seu",
+                "suas",
+                "sobre"
             ],
             [
-                "forte",
-                "positivo",
-                "positivos",
-                "qualidade",
-                "qualidades"
+                "fraco",
+                "negativo",
+                "negativos",
+                "defeitos",
+                "defeito"
             ]
         ],
         "questions": [
@@ -214,12 +218,17 @@
                 "cinco",
                 "futuro",
                 "futuras",
-                "futuros"
+                "futuros",
+                "metas",
+                "meta"
+
             ],
             [
                 "anos",
                 "ve",
-                "metas"
+                "como",
+                "daqui",
+                "voce"
             ]
         ],
         "questions": [
